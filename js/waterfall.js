@@ -13,7 +13,21 @@
      * 内容JSON
      */
   var demoContent = [
-    {
+      {
+          demo_link: 'https://beats0.github.io/BILIBILI-2016-version',
+          img_link: 'http://static.hdslb.com/live-static/live-index-v4/static/img/img.hinter.46822ec.jpg',
+          code_link: 'https://github.com/Beats0/BILIBILI-2016-version',
+          title: 'bilibili2016的界面',
+          core_tech: 'JavaScript',
+          description: '一直就觉得bilibili的主页面很有意思，于是对bilibili的代码进行了学习学习，最后在GitHub找到的2016版本的源文件。代码详情见 <a href ="https://github.com/Beats0/BILIBILI-2016-version">这里</a>。'
+      },{
+          demo_link: 'https://beats0.github.io/Bootstrap-test',
+          img_link: 'https://camo.githubusercontent.com/5d417873a11d7175ec40fc3af3c6cb024a531dd7/68747470733a2f2f676574626f6f7473747261702e636f6d2f6173736574732f6272616e642f626f6f7473747261702d736f6c69642e737667',
+          code_link: 'https://github.com/Beats0/Bootstrap-test',
+          title: '用Bootstrap.css与Aos.js快速搭建的一个界面',
+          core_tech: 'css，JavaScript',
+          description: '用Bootstrap.css与Aos.js快速搭建的一个界面，前前后后一共用了一个星期的时间吧，就当做Bootstrap的上手练习吧。总的来说Bootstrap快速开发还是挺好用的，但限制的地方还是有很多，有些地方定死了的，真的改不了啊。Aos的动画效果自然是好评，支持的动画样式有很多种，很好很强大。代码详情见 <a href ="https://github.com/Beats0/Bootstrap-test">这里</a>。'
+      },{
       demo_link: 'https://codepen.io/haoyang/pen/jrvrQq',
       img_link: 'https://ooo.0o0.ooo/2016/11/24/5836d81f48cd2.png',
       code_link: 'https://codepen.io/haoyang/pen/jrvrQq',

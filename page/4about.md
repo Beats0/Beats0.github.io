@@ -9,7 +9,121 @@ type: page
 * content
 {:toc}
 
-## 关于我
+## 关于我（现Blog拥有者Beats0）
+
+大二狗<br>
+
+Acg爱好者
+
+喜欢音乐：[虾米音乐](http://www.xiami.com/u/45818524?spm=a1z1s.6843761.226669510.8.ypP9Y9),时而喜欢安静，时而喜欢电音，对后摇音乐有着特别的感觉，觉得人生就应该像后摇一样，安静中却带有反叛，平静中却仍有激情。
+
+当初在大一的时候我就突然醒悟了，人生不能太过懒散，总是应该要有一些作为的，于是在大一下学期的时候开始天天泡图书馆，自学前端。非常感谢[朋友](https://github.com/Jackadminx)让我能更快知道还有GitHub这样的网站，也非常感谢他的各方面的帮助。
+
+现在努力学习中，希望自己可以一直这样坚持下去，也算是对自己的一种肯定吧......
+
+## 联系我
+
+* GitHub：[Beats0](https://github.com/Beats0)
+* QQ: 2047155291
+* email：2047155291@qq.com
+* [Weibo](http://weibo.com/u/5848651877)
+* [bilibili](https://space.bilibili.com/598848/#!/)
+* [虾米音乐](http://www.xiami.com/u/45818524?spm=a1z1s.6843761.226669510.8.ypP9Y9)
+
+
+## 其他项目：
+
+**网站[Steam Background Collection](https://github.com/steambg) Jekyll创始人**
+
+## Update Log
+
+### 2017.8.24
+
+* `[^]` Update Game Background: `Narcissu 10th Anniversary Anthology Project `
+* `[^]` Update website preview with my Steam Artwork:[Index Page](https://steamuserimages-a.akamaihd.net/ugc/862857581988270185/AA449E63E8CB51D8075406DB8DA188414CCEEF66) & [Post Page](https://steamuserimages-a.akamaihd.net/ugc/862857581988267056/565D8EA1C7DE31C413F212AB1D5C6C3AF535800D)
+* `[^]` Add `Artwork` preview
+* `[^]` Add [License](https://github.com/jekyll/jekyll/blob/master/LICENSE) file
+
+### 2017.8.23
+
+* `[^]` Update `Update List` information
+* `[^]` Restore website preview to my Steam Artwork:[Index Page](https://steamuserimages-a.akamaihd.net/ugc/862857581984772745/A675CC44DBBA90FA8A1FAE7866521713F839742F/) & [Post Page](https://steamuserimages-a.akamaihd.net/ugc/862857581984777375/AA266EB43689228E6A6A1806DBC43151593CF9B5/)
+* `[^]` ~~`Steam Card Exchange crash down` so there's no update today :(~~
+
+### 2017.8.22
+
+* `[^]` Update Game Background: `tayutama 2 -you're the only one-`
+* `[^]` Div.iteam Width change to 300px @media (max-width: 700px) in `jekyllthemes.css`
+* `[^]` Add steam `Markt` link
+* `[^]` Add `indexpage`.png,Add `postpage`.png to Preview website
+
+### 2017.8.21
+
+* `[^]` Update Game Background: `eden*`
+* `[^]` Forked [footer.html]() by [gaohaoyang.github.io](https://github.com/Gaohaoyang/gaohaoyang.github.io)
+* `[^]` Add `Statistical Analysis`
+* `[^]` Optimized code, Extracting `footer` code to default.html
+
+### 2017.8.20
+
+* `[^]` Update Game Background: `NEKOPARA Vol. 3`
+* `[^]` Add `Download` link
+* `[^]` Attention: `Download` only can be used in Firefox and Chrome
+
+### 2017.8.19
+
+* `[^]` Create a New Account [steambg](https://github.com/steambg) on GitHub
+* `[^]` Dispose this jekylltheme on [steambg.github.io](https://github.com/steambg/steambg.github.io)
+
+### 2017.8.18
+
+* `[^]` Update Game Background: `NEKOPARA Vol. 0`
+* `[^]` Update Game Background: `NEKOPARA Vol. 1`
+* `[^]` Update Game Background: `NEKOPARA Vol. 2`
+* `[^]` Div.iteam width change to 18%
+* `[^]` Div.iteam Width change to 370px @media (max-width: 700px) in `jekyllthemes.css`
+
+### 2017.8.16
+
+* `[^]` Delete post introduction
+* `[^]` Add `iframe src=""` in `markdown`
+* `[^]` Attention: iframe was no allowd show on GitHub Page,but you can use [X-Browser.apk](http://www.xbext.com/) to read all
+
+
+### 2017.8.15
+
+* `[^]` Change `thumbnails` to steam link address image
+* `[^]` Change `thumbnails` image natural size to 500x300f pixels，image preview load faster
+* `[^]` Add steamcardexchange `Showcase` link
+* `[^]` Add `Game Name` Tag
+
+### 2017.8.10
+
+* `[^]` Rewrite little codes based on jekyll
+* `[^]` Optimized code for `jekyllthemes.css`
+* `[^]` Add `favicon.ico`
+* `[^]` Fix  bug
+* `[^]` Delete Googl advertisement
+* `[^]` Paginate change to 25 in `_config.yml`
+
+### 2017.8.8
+
+* `[^]` Forked [jekyllthemes](https://github.com/mattvh/jekyllthemes) from [mavvth](https://github.com/mattvh)
+* `[^]` Do some test on localhost:4000
+
+## License
+
+See the [LICENSE](https://github.com/jekyll/jekyll/blob/master/LICENSE) file.<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+## 作者（原jekyll作者Gaohaoyang）
 
 <iframe src="https://githubbadge.appspot.com/gaohaoyang?s=1" style="border: 0;height: 142px;width: 200px;overflow: hidden;" frameBorder="0"></iframe>
 
