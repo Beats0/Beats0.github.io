@@ -1,0 +1,57 @@
+---
+layout: post
+title:  "剖析Vue原理&实现双向绑定MVVM"
+categories: JavaScript
+tags:  JavaScript Vue.js 双向绑定
+author: Beats0
+---
+
+* content
+{:toc}
+
+
+[阅读原文地址：https://segmentfault.com/a/1190000006599500](https://segmentfault.com/a/1190000006599500)
+
+本文能帮你做什么？
+1、了解vue的双向数据绑定原理以及核心代码模块
+2、缓解好奇心的同时了解如何实现双向绑定
+为了便于说明原理与实现，本文相关代码主要摘自vue源码, 并进行了简化改造，相对较简陋，并未考虑到数组的处理、数据的循环依赖等，也难免存在一些问题，欢迎大家指正。不过这些并不会影响大家的阅读和理解，相信看完本文后对大家在阅读vue源码的时候会更有帮助
+本文所有相关代码均在github上面可找到 https://github.com/DMQ/mvvm
+
+## 部分js代码
+
+```js
+ <div id="mvvm-app">
+     <input type="text" v-model="word">
+     <p>{
+     {word}}</p>
+     <button v-on:click="sayHi">change model</button>
+ </div>
+
+ <script src="./js/observer.js"></script>
+ <script src="./js/watcher.js"></script>
+ <script src="./js/compile.js"></script>
+ <script src="./js/mvvm.js"></script>
+ <script>
+     var vm = new MVVM({
+         el: '#mvvm-app',
+         data: {
+             word: 'Hello World!'
+         },
+         methods: {
+             sayHi: function() {
+                 this.word = 'Hi, everybody!';
+             }
+         }
+     });
+ </script>
+```
+
+
+
+
+## 参考
+
+- [JavaScript数据双向绑定的简单演示]（https://segmentfault.com/a/1190000004681757）
+- [Vue.js入门（一）--MVVM框架理解]（https://segmentfault.com/a/1190000009397476）
+- [Vue上手初体验]（https://segmentfault.com/a/1190000007849881）
