@@ -14,6 +14,13 @@
      */
   var demoContent = [
       {
+          demo_link: 'https://beats0.github.io/Bootstrap-test/mygalgame',
+          img_link: 'https://raw.githubusercontent.com/Beats0/Bootstrap-test/master/mygalgame/images/logo.png',
+          code_link: 'https://github.com/Beats0/Bootstrap-test',
+          title: '部分mygalgame网站界面',
+          core_tech: 'Bootstrap JavaScript jQuery worldpress',
+          description: '部分mygalgame网站前端界面，网站的主题也做得非常好，可惜在worldpress没看到这个主题，自己也拿不到后端以及PHP代码，只好看他的HTML代码了，最后完成了主题界面，代码详情见 <a href =“https://github.com/Beats0/Bootstrap-test">这里</a>。'
+      },{
           demo_link: 'https://beats0.github.io/BILIBILI-2016-version',
           img_link: 'http://static.hdslb.com/live-static/live-index-v4/static/img/img.hinter.46822ec.jpg',
           code_link: 'https://github.com/Beats0/BILIBILI-2016-version',
