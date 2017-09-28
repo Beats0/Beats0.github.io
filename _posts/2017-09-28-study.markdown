@@ -1,7 +1,17 @@
-# Beats0.github.io
-Beats0's Jekyll theme blog on GitHub！！！<br>
-努力自学中...
-## Blog：[https://beats0.github.io](https://beats0.github.io)
+---
+layout: post
+title:  "前端学习干货"
+categories: jekyll
+tags:  干货
+author: Beats0
+---
+
+* content
+{:toc}
+
+ 自己的学习干货
+
+
 
 * [导航栏 Collections](#collections)
     * [前端 Front-end](#前端-front-end)
@@ -94,14 +104,15 @@ Beats0's Jekyll theme blog on GitHub！！！<br>
 * `[^]` [ruanyf/react-demos](https://github.com/ruanyf/react-demos)
 
 #### 装逼指南 Pretentious
-![trollface](https://assets-cdn.github.com/images/icons/emoji/trollface.png)<br>
+![trollface](https://assets-cdn.github.com/images/icons/emoji/trollface.png)
 
 * `[^]` [Git的奇技淫巧](https://github.com/521xueweihan/git-tips)
 * `[^]` [Excuse me？这个前端面试在搞事！](https://zhuanlan.zhihu.com/p/25407758)
 * `[^]` [这些JavaScript编程黑科技，装逼指南，高逼格代码，让你惊叹不已](https://github.com/jawil/blog/issues/24)
 
 
-Jekyll theme by [Gaohaoyang](https://github.com/Gaohaoyang).<br>
 
-(｡･ω･｡)
+## 参考
+
+- [我的jekyll配置]（https://github.com/Beats0/steam-background-collection）
 
