@@ -18,6 +18,11 @@ header {
         line-height: 52px;
         .brand {
             font-size: 18px;
+            color: white;
+        }
+        i.fa.fa-github {
+            font-size: 50px;
+            color: white;
         }
         small {
             margin-left: 26px;
@@ -43,7 +48,7 @@ header {
                         padding: 0 10px;
                         height: 52px;
                         &:hover {
-                            background-color: #000;
+                            background-color: hotpink;
                         }
                         i {
                             margin-right: 5px;
@@ -51,7 +56,7 @@ header {
                     }
                     >.active {
                         color: #fff;
-                        background-color: #000;
+                        background-color: hotpink;
                         box-shadow: 0 25px 25px -15px rgba(255,255,255,0.93);
                     }
                 }

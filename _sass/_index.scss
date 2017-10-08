@@ -1,9 +1,20 @@
 .page[index] {
     a {
-        color: #4d6dad;
+        color: hotpink;
         transition: 0.5s ease;
         &:hover {
-            color: #223253;
+            color: #ffffff;
+            animation: neon 0.5s ease-in-out infinite alternate;
+            -webkit-animation: neon 0.5s ease-in-out infinite alternate;
+        -moz-animation: neon 0.5s ease-in-out infinite alternate;
+        }
+        @keyframes neon {
+            0% {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 25px #fff, 0 0 30px #ff00de, 0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 60px #ff00de;
+            }
+        100% {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de, 0 0 25px #ff00de, 0 0 30px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de;
+    }
         }
     }
     .left {
@@ -48,7 +59,8 @@
                 }
                 .read-all {
                     text-align: right;
-                    font-size: 14px;
+                    font-size: 16px;
+                    margin: 20px 0;
                     a {
                         color: #778ab0;
                         transition: 0.2s ease;
