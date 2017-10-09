@@ -30,7 +30,8 @@ body {
 font-family: 'Helvetica Neue',Helvetica,Arial,'Microsoft YaHei',sans-serif;
     color: #333;
     background: rgba(255, 0, 120, 0.10);
-    background-image: url(https://ws2.sinaimg.cn/large/005ODKsIgw1fatix8x9ppj31hc0xcae2.jpg);
+    //https://ws2.sinaimg.cn/large/005ODKsIgw1fatix8x9ppj31hc0xcae2.jpg
+    background-image: url(https://ws2.sinaimg.cn/large/005ODKsIgw1fatix8x9ppj31hcs0xcae2.jpg);
     position: relative;
     min-height: 100%;
     padding-bottom: 190px;
@@ -51,8 +52,8 @@ button {
 }
 hr {
     border: 0;
-    border-top: 3px solid #eee;
-    margin: 20px 0;
+    border-top: 2px solid lightgray;
+    margin: 30px 0;
 }
 
 ///////////

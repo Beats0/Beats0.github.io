@@ -1,7 +1,7 @@
 .page[index] {
     a {
         color: hotpink;
-        transition: 0.5s ease;
+        transition: 0.3s ease;
         &:hover {
             color: #ffffff;
             animation: neon 0.5s ease-in-out infinite alternate;

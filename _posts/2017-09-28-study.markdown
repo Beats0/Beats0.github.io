@@ -2,7 +2,7 @@
 layout: post
 title:  "前端学习干货"
 categories: jekyll
-tags:  干货
+tags:  前端
 author: Beats0
 ---
 
