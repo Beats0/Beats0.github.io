@@ -1,7 +1,10 @@
 # Beats0.github.io
-Beats0's Jekyll theme blog on GitHub！！！<br>
-努力自学中...
-## Blog：[https://beats0.github.io](https://beats0.github.io)
+#### Blog：[https://beats0.github.io](https://beats0.github.io)
+#### Beats0's Jekyll theme blog on GitHub(｡･ω･｡)！！！<br>
+努力自学中... *_(:з」∠)__
+
+Jekyll theme by [Gaohaoyang](https://github.com/Gaohaoyang).<br>
+
 
 * [导航栏 Collections](#collections)
     * [前端 Front-end](#前端-front-end)
@@ -101,7 +104,6 @@ Beats0's Jekyll theme blog on GitHub！！！<br>
 * `[^]` [这些JavaScript编程黑科技，装逼指南，高逼格代码，让你惊叹不已](https://github.com/jawil/blog/issues/24)
 
 
-Jekyll theme by [Gaohaoyang](https://github.com/Gaohaoyang).<br>
 
 (｡･ω･｡)
 
