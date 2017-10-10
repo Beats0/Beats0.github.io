@@ -5,6 +5,21 @@
 
 Jekyll theme by [Gaohaoyang](https://github.com/Gaohaoyang).<br>
 
+### Update Log
+
+*2018.10.10*
+
+- `[^]` 修改Blog图片，压缩图片大小，修改其他界面图片效果
+- `[^]` 修改Bug
+
+*2018.10.9*
+
+- `[^]` 修改部分主题样式，Blog主页添加图片渐淡滚动效果，css详见/css/fade.css
+
+*2018.10.8*
+
+- `[^]` 修改部分主题样式，将Blog改成透明效果
+
 
 * [导航栏 Collections](#collections)
     * [前端 Front-end](#前端-front-end)
