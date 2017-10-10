@@ -9,7 +9,7 @@ Jekyll theme by [Gaohaoyang](https://github.com/Gaohaoyang).<br>
 
 *2018.10.10*
 
-- `[^]` 修改Blog图片，压缩图片大小，修改其他界面图片效果
+- `[^]` 修改Blog图片，压缩图片大小，全部使用https连接，修改其他界面图片效果
 - `[^]` 修改Bug
 
 *2018.10.9*
