@@ -10,11 +10,11 @@
         }
         @keyframes neon {
             0% {
-                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 25px #fff, 0 0 30px #ff00de, 0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 60px #ff00de;
+                text-shadow: 0 0 8px #fff, 0 0 10px #fff, 0 0 12px #fff, 0 0 14px #ff00de, 0 0 16px #ff00de, 0 0 18px #ff00de, 0 0 20px #ff00de, 0 0 22px #ff00de;
             }
-        100% {
-        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de, 0 0 25px #ff00de, 0 0 30px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de;
-    }
+            100% {
+                text-shadow: 0 0 10px #fff, 0 0 18px #fff, 0 0 20px #fff, 0 0 22px #ff00de, 0 0 25px #ff00de, 0 0 28px #ff00de, 0 0 30px #ff00de, 0 0 35px #ff00de;
+            }
         }
     }
     .left {

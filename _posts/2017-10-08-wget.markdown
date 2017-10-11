@@ -12,7 +12,7 @@ author: Beats0
 用wget命令下载整个网站，其实也算不上是下载整个网站，因为还是会丢失少部分文件，比如后台服务如PHP等代码就拿不到了，而最终下载的就是一个一个的可以看见的前端HTML文件。甚至最后你还可以批量更改代码，让它成为自己的网页。
 #### wget命令以及参数
 
-```ruby
+```vim
 wget -c -r -np -k -L -p http://www.xxx.com
 ```
 推荐使用镜像方法
@@ -225,6 +225,6 @@ wget --ftp-user=USERNAME --ftp-password=PASSWORD url
 
 ## 参考
 
-- [Linux命令大全:wget命令][ http://man.linuxde.net/wget]（http://man.linuxde.net/wget）
+- [Linux命令大全:wget命令](http://man.linuxde.net/wget）)
 - [Beats0/www.mygalgame.com](https://github.com/Beats0/www.mygalgame.com)
 

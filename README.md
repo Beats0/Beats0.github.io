@@ -7,6 +7,11 @@ Jekyll theme by [Gaohaoyang](https://github.com/Gaohaoyang).<br>
 
 ### Update Log
 
+*2018.10.11*
+
+- `[^]` 修改highlighting中的code颜色加深，更改绿色#31ff00使Linux代码看起来更加亲切
+- `[-]` fade.css去掉一些不必要的样式
+
 *2018.10.10*
 
 - `[^]` 修改Blog图片，压缩图片大小，全部使用https连接，修改其他界面图片效果

@@ -153,6 +153,7 @@
     animation-delay: 30s;
 }
 
+/*imageAnimation动画效果*/
 @-webkit-keyframes imageAnimation {
     0% {
         opacity: 0;
@@ -293,6 +294,7 @@
     }
 }
 
+/*titleAnimation文字动画效果*/
 @-moz-keyframes titleAnimation {
     0% {
         opacity: 0;

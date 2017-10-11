@@ -109,6 +109,6 @@ bundle exec jekyll serve
 
 ## 参考
 
-- [我的jekyll配置]（https://github.com/Beats0/steam-background-collection）
-- [gaohaoyang.github.io]（https://github.com/Gaohaoyang/gaohaoyang.github.io）
-- [简书：Jekyll搭建博客并添加百度统计]（http://www.jianshu.com/p/9a062041394e）
+- [我的jekyll配置](https://github.com/Beats0/steam-background-collection)
+- [gaohaoyang.github.io](https://github.com/Gaohaoyang/gaohaoyang.githu.io)
+- [简书：Jekyll搭建博客并添加百度统计](http://www.jianshu.com/p/9a062041394e)
