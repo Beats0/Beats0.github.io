@@ -38,7 +38,7 @@ author: Beats0
 ```
 
 注意写上浏览器兼容性:`@keyframes``@-webkit-keyframes``@-moz-keyframes``@-o-keyframes``@-ms-keyframes`<br>
-css代码详见[/css/fade.css]()
+css代码详见[/css/fade.css](https://github.com/Beats0/Beats0.github.io/blob/master/css/fade.css)
 
 
 
@@ -79,7 +79,7 @@ css代码详见[/css/fade.css]()
 ```
 这样的意思就是将对应的child下的img放入到对应的li中
 ### css部分
-css代码详见[/css/fade.css]()
+css代码详见[/css/fade.css](https://github.com/Beats0/Beats0.github.io/blob/master/css/fade.css)
 
 ```css
 .cb-slideshow li span {
@@ -178,6 +178,6 @@ translate()           |        转换画布的用户坐标系统。
 
 ## 参考
 
-- [fade.css](http://man.linuxde.net/wget)
+- [fade.css](https://github.com/Beats0/Beats0.github.io/blob/master/css/fade.css)
 - [www.mygalgame.com](https://www.mygalgame.com)
-
+- [cssslider:纯 CSS 的图片轮播图](http://cssslider.com/)
