@@ -47,7 +47,29 @@ type: page
 
 ## 编程语言
 
+### HTML/CSS
+
+* [chokcoco/iCSS](https://github.com/chokcoco/iCSS)
+
+    非常多的强大的CSS奇淫技巧与讲解
+
+- Bootstrap框架(css,js):[GitHub:Bootstrap](https://github.com/twbs/bootstrap)
+- font-awesome图标：(css)[GitHub:font-awesome](https://github.com/FortAwesome/Font-Awesome)
+- css预处理：sass(css,ruby):[GitHub:sass](https://github.com/sass/sass)
+
 ### JavaScript
+
+- 多种过渡动画效果：AOS.js(css,js):[GitHub:AOS.js](https://github.com/michalsnik/aos)
+- 强大的动画效果类库：anime:[GitHub:anime](https://github.com/Beats0?tab=stars)
+- JS 2d物理引擎库：matter-js：[GitHub:matter-js](https://github.com/liabru/matter-js)
+- 创建图形和交互式体验库：P5.js:[GitHub:P5.js](https://github.com/processing/p5.js)
+- WORDPRESS主题：[wordpress.org](https://wordpress.org/themes/)
+- WORDPRESS SVN and PHP：(PHP)[GitHub:WordPress](https://github.com/WordPress/WordPress)
+- WP Ajax Edit Comments:[https://wordpress.org/plugins/wp-ajax-edit-comments/](https://wordpress.org/plugins/wp-ajax-edit-comments/)
+- 纯js制图Library：highslide.js(js):[http://highslide.com](http://highslide.com) and [https://www.highcharts.com/demo](https://www.highcharts.com/demo)
+- 简约型JS类库：zepto:[GitHub:zepto](https://github.com/madrobby/zepto)
+- virtual dom：snabbdom：[GitHub:snabbdom](https://github.com/snabbdom/snabbdom)
+- 强大的滚动条：iscroll:[GitHub:iscroll](https://github.com/cubiq/iscroll)
 
 * [JavaScript 标准参考教程（alpha） -阮一峰](http://javascript.ruanyifeng.com/)
 
