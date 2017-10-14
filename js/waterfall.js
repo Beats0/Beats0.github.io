@@ -14,26 +14,26 @@
      */
   var demoContent = [
       {
-          demo_link: 'https://beats0.github.io/Bootstrap-test/mygalgame',
-          img_link: 'https://raw.githubusercontent.com/Beats0/Bootstrap-test/master/mygalgame/images/logo.png',
-          code_link: 'https://github.com/Beats0/Bootstrap-test',
+          demo_link: 'https://beats0.github.io/Demo/mygalgame',
+          img_link: 'https://raw.githubusercontent.com/Beats0/Demo/master/mygalgame/images/logo.png',
+          code_link: 'https://github.com/Beats0/Demo/tree/master/mygalgame',
           title: '部分mygalgame网站界面',
           core_tech: 'Bootstrap JavaScript jQuery worldpress',
-          description: '部分mygalgame网站前端界面，网站的主题也做得非常好，可惜在worldpress没看到这个主题，自己也拿不到后端以及PHP代码，只好看他的HTML代码了，最后完成了主题界面，代码详情见 <a href =“https://github.com/Beats0/Bootstrap-test">这里</a>。'
+          description: '下载mygalgame网站前端界面，网站的主题也做得非常好， 就当是网站的备份，全部网站访问https://github.com/Beats0/www.mygalgame.com<a href =“https://github.com/Beats0/Demo/tree/master/mygalgame">这里</a>。'
       },{
-          demo_link: 'https://beats0.github.io/BILIBILI-2016-version',
+          demo_link: 'https://beats0.github.io/Demo/bilibili_2016',
           img_link: 'http://static.hdslb.com/live-static/live-index-v4/static/img/img.hinter.46822ec.jpg',
-          code_link: 'https://github.com/Beats0/BILIBILI-2016-version',
+          code_link: 'https://github.com/Beats0/Demo/tree/master/bilibili_2016',
           title: 'bilibili2016的界面',
           core_tech: 'JavaScript',
           description: '一直就觉得bilibili的主页面很有意思，于是对bilibili的代码进行了学习学习，最后在GitHub找到的2016版本的源文件。代码详情见 <a href ="https://github.com/Beats0/BILIBILI-2016-version">这里</a>。'
       },{
-          demo_link: 'https://beats0.github.io/Bootstrap-test',
+          demo_link: 'https://beats0.github.io/Demo',
           img_link: 'https://camo.githubusercontent.com/5d417873a11d7175ec40fc3af3c6cb024a531dd7/68747470733a2f2f676574626f6f7473747261702e636f6d2f6173736574732f6272616e642f626f6f7473747261702d736f6c69642e737667',
-          code_link: 'https://github.com/Beats0/Bootstrap-test',
+          code_link: 'https://github.com/Beats0/Demo',
           title: '用Bootstrap.css与Aos.js快速搭建的一个界面',
           core_tech: 'css，JavaScript',
-          description: '用Bootstrap.css与Aos.js快速搭建的一个界面，前前后后一共用了一个星期的时间吧，就当做Bootstrap的上手练习吧。总的来说Bootstrap快速开发还是挺好用的，但限制的地方还是有很多，有些地方定死了的，真的改不了啊。Aos的动画效果自然是好评，支持的动画样式有很多种，很好很强大。代码详情见 <a href ="https://github.com/Beats0/Bootstrap-test">这里</a>。'
+          description: '用Bootstrap.css与Aos.js快速搭建的一个界面，前前后后一共用了一个星期的时间吧，就当做Bootstrap的上手练习吧。总的来说Bootstrap快速开发还是挺好用的，但限制的地方还是有很多，有些地方定死了的，真的改不了啊。Aos的动画效果自然是好评，支持的动画样式有很多种，很好很强大。代码详情见 <a href ="https://github.com/Beats0/Demo">这里</a>。'
       },{
       demo_link: 'https://codepen.io/haoyang/pen/jrvrQq',
       img_link: 'https://ooo.0o0.ooo/2016/11/24/5836d81f48cd2.png',
