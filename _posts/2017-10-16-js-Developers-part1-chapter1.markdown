@@ -17,23 +17,11 @@ author: Beats0
 
 
 ### Arrray类型
-#### 创建
+#### 语法
 ```js
-var colors = new Array(20);                 //创建length长度为20的数组
-var colors = new Array("red","blue","green");                   //创建包含3个字符串的数组
-
-
-var colors = new Array(3);                   //创建包含3个项的数组
-var names = Array("Greg");                    //创建包含1项，即为“Greg”的数组
-
-var value = [1,2,];                 //不要这样，会创建一个包含2或3的数组
-var options = [,,,,,];                  //不要这样，会创建一个包含5或6的数组
-```
-#### 更改
-```js
-var value = [1,2,3];
-value.length = 4;
-value[3];                   //undifined,因为第四项不存在，但length依然为4
+new Array();
+new Array(size);
+new Array(element0, element0, ..., elementn);
 ```
 #### 对象属性
 
@@ -63,6 +51,25 @@ toString() |把数组转换为字符串，并返回结果。
 toLocaleString() |把数组转换为本地数组，并返回结果。
 unshift() |向数组的开头添加一个或更多元素，并返回新的长度。
 valueOf() |返回数组对象的原始值
+
+#### 创建
+```js
+var colors = new Array(20);                 //创建length长度为20的数组
+var colors = new Array("red","blue","green");                   //创建包含3个字符串的数组
+
+
+var colors = new Array(3);                   //创建包含3个项的数组
+var names = Array("Greg");                    //创建包含1项，即为“Greg”的数组
+
+var value = [1,2,];                 //不要这样，会创建一个包含2或3的数组
+var options = [,,,,,];                  //不要这样，会创建一个包含5或6的数组
+```
+#### 更改
+```js
+var value = [1,2,3];
+value.length = 4;
+value[3];                   //undifined,因为第四项不存在，但length依然为4
+```
 
 #### 排序
 ##### reverse()
@@ -130,6 +137,7 @@ filter()|对数组的每一项运动给定函数，返回true的项组成的数�
 forEach()|对数组的每一项运动给定函数，这个方法没有返回值
 map()|对数组的每一项运动给定函数，返回每次函数调用的结果组成的数组
 some()|对数组的每一项运动给定函数，如果该函数对`任意一项`都返回true则返回true`(存在一个)`
+
 #### 缩小方法
 ##### reduce()
 对数组中的所有元素调用指定的回调函数。该回调函数的返回值为累积结果，并且此返回值在下一次调用该回调函数时作为参数提供。
@@ -142,6 +150,7 @@ array.reduce(callbackfn,[initialValue])
 array1|必需。一个数组对象。
 callbackfn|必需。一个接受最多四个参数的函数。对于数组中的每个元素，reduce 方法都会调用 callbackfn 函数一次。
 initialValue|可选。如果指定 initialValue，则它将用作初始值来启动累积。第一次调用 callbackfn 函数会将此值作为参数而非数组值提供。
+
 ##### reduceRight()
 reduceRight()方法的功能和reduce()功能是一样的，不同的是reduceRight()从数组的末尾向前将数组中的数组项做累加。
 
@@ -259,9 +268,65 @@ valueOf()	|返回某个字符串对象的原始值。
 ### 单体内置对象
 #### Global对象
 ##### eval()方法
+eval() 函数可计算某个字符串，并执行其中的的 JavaScript 代码。
+```js
+eval(string)
+```
 
+参数 | 描述 |
+-----|-----|
+string |必需。要计算的字符串，其中含有要计算的 JavaScript 表达式或要执行的语句。
+例：
+```js
+eval("var msg = 'hellow world';");
+alter(msg);                 //hello world
+
+"use strict";
+eval = "hi";                    //causes error
+```
+`严格模式下，载外部访问不到eval()中创建的任何变量或函数，所以以前两个例子会报错，为eval赋值也会报错。eval()非常强大但也非常危险，如代码注入`
+
+### 包装对象
+所谓“包装对象”，就是分别与数值、字符串、布尔值相对应的Number、String、Boolean三个原生对象。这三个原生对象可以把原始类型的值变成（包装成）对象。
+```js
+var v1 = new Number(123);
+var v2 = new String('abc');
+var v3 = new Boolean(true);
+
+//成三个对象，与原始值的类型不同,用typeof运算符就可以看出来。
+
+typeof v1 // "object"
+typeof v2 // "object"
+typeof v3 // "object"
+
+v1 === 123 // false
+v2 === 'abc' // false
+v3 === true // false
+```
+##### valueOf()
+`valueOf`方法返回包装对象实例对应的`原始类型的值。`
+##### toString()
+`toString`方法返回实例对应的`字符串形式。`
+#### 原始类型的自动转换
+原始类型的值，可以自动当作对象调用，即调用各种对象的方法和参数。这时，JavaScript引擎会自动将原始类型的值转为包装对象，在使用后立刻销毁。
+```js
+var s = 'Hello World';
+s.x = 123;
+s.x // undefined
+//这里的包装对象是自动生成的，赋值后自动销毁，所以最后一行实际上调用的是一个新的包装对象。
+```
+另一方面，调用结束后，临时对象会自动销毁。这意味着，下一次调用字符串的属性时，实际是调用一个新生成的对象，而不是上一次调用时生成的那个对象，所以取不到赋值在上一个对象的属性。如果想要为字符串添加属性，只有在它的原型对象String.prototype上定义（参见《面向对象编程》一章）。
+
+### 小结
+- 函数实际上是Function类型的实例，因此函数也是对象，所以也拥有方法，可增强其行为
+
+因为有了基本包装类型，所以js中的基本类型值可以被当做对象访问，三种分别为：Boolean，Number和String。以下为共同特征：
+- 每个包装都映射同名的基本类型
+- 在读取模式下访问基本类型时会创建基本包装类型的一个对象并以此操作
+- 操作基本类型值得语句一经执行完毕，就会立即销毁新创造的包装对象
 
 ## 参考
 
 - [JavaScript高级教程3第五章]()
 - [w3cSchool-javascript](http://www.w3school.com.cn/b.asp)
+- [阮一峰JavaScript参考标准-包装对象](http://javascript.ruanyifeng.com/stdlib/wrapper.html)
