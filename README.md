@@ -9,6 +9,10 @@ Jekyll theme by [Gaohaoyang](https://github.com/Gaohaoyang).<br>
 
 *2018.10.11*
 
+- `[^]` 添加谷歌地球233
+
+*2018.10.11*
+
 - `[^]` 修改highlighting中的code颜色加深，更改绿色#31ff00使Linux代码看起来更加亲切
 - `[-]` fade.css去掉一些不必要的样式
 
