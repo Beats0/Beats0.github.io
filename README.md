@@ -9,7 +9,7 @@ Jekyll theme by [Gaohaoyang](https://github.com/Gaohaoyang).<br>
 
 *2018.10.11*
 
-- `[^]` 添加谷歌地球233
+- `[^]` 添加revolvermaps
 
 *2018.10.11*
 
