@@ -24,5 +24,87 @@
 
     console.log(numbers.indexOf(7))            //-1
 
+//function createPerson(name, age) {
+//    var o = new Object();
+//    o.name = name;
+//    o.age = age;
+//    o.sayName= function() {
+//        alert(this.name);
+//    };
+//    return o;
+//}
+//
+//var person1 = createPerson('Nicholas', 29);
+
+//function Person() {
+//}
+//
+//Person.prototype.name = "Nicholas";
+//Person.prototype.age = 29;
+//Person.prototype.sayName = function () {
+//    alert(this.name);
+//};
+//var keys = Object.keys(Person.prototype);
+//alert(keys);        //name,age,sayName
+//
+//var person1 = new Person();
+//person1.name = "Rob";
+//person1.age = 31;
+//var person1keys = Object.keys(person1);
+//alert(person1keys);     //name,age
+
+//function SpecialArray() {
+//    var values = new Array();
+//    values.push.apply(values, arguments);
+//    values.toPipedString = function () {
+//        return this.join("|");
+//    };
+//    return values;
+//}
+//
+//var colors = new SpecialArray("red", "blue", "green");
+//console.log(colors.toPipedString());        //red|blue|green
+
+//function Person(name, age) {
+//    var o = new Object();
+//    o.sayname = function () {
+//        alert(name);
+//    };
+//    return o;
+//}
+//
+//var frind = Person("Nicholas", 29);
+//frind.sayname();
+
+//function SuperType(){
+//    this.name = 'Nicholas';
+//    this.friends =['David','Bob','Lucy'];
+//    this.sayName = function(){
+//        alert(this.name);
+//    }
+//}
+//
+//function SubType(){
+//    SuperType.call(this);
+//}
+//
+//var subType = new SubType();
+//subType.sayName();
+
+function SuperType(name){
+    this.name = name;
+}
+
+function SubType(){
+    //继承SuperType，同时传递参数
+    SuperType.call(this,"Nicholas");
+
+    //实例属性
+    this.age=29;
+}
+
+var instance = new SubType();
+console.log(instance.name);
+console.log(instance.age);
 </script>
 </html>

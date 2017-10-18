@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "js高程学习笔记-part.1"
-categories: JavaScript
-tags:  JavaScript JS高程笔记
+categories: JavaScript JS高程笔记
+tags:  JavaScript 类型 方法
 author: Beats0
 ---
 
@@ -327,6 +327,6 @@ s.x // undefined
 
 ## 参考
 
-- [JavaScript高级教程3第五章]()
+- [JavaScript高级教程3第五章-引用类型]()
 - [w3cSchool-javascript](http://www.w3school.com.cn/b.asp)
 - [阮一峰JavaScript参考标准-包装对象](http://javascript.ruanyifeng.com/stdlib/wrapper.html)
