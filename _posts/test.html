@@ -91,20 +91,71 @@
 //var subType = new SubType();
 //subType.sayName();
 
-function SuperType(name){
-    this.name = name;
-}
+//function SuperType(name){
+//    this.name = name;
+//}
+//
+//function SubType(){
+//    //继承SuperType，同时传递参数
+//    SuperType.call(this,"Nicholas");
+//
+//    //实例属性
+//    this.age=29;
+//}
+//
+//var instance = new SubType();
+//console.log(instance.name);
+//console.log(instance.age);
 
-function SubType(){
-    //继承SuperType，同时传递参数
-    SuperType.call(this,"Nicholas");
+//function factorial(num) {
+//    if (num <= 1) {
+//        return 1
+//    } else {
+//        return num * factorial(num - 1)
+//    }
+//}
+//
+//console.log(factorial(4));  //24
+//var anotherfactorial = factorial;
+//factorial = null;
+//console.log(anotherfactorial(4))  //TypeError: factorial is not a function
 
-    //实例属性
-    this.age=29;
-}
+// var factorial=(function f(num) {
+//    if (num <= 1) {
+//        return 1;
+//    } else {
+//        return num * f(num - 1);
+//    }
+//});
+//
+//console.log(factorial(4));
 
-var instance = new SubType();
-console.log(instance.name);
-console.log(instance.age);
+//    var someFunction=function () {
+//        //块级作用域
+//    };
+//    someFunction()();
+
+var singleton = function () {
+    //私有变量和函数
+    var privateVariable = 10;
+
+    function privateFunction() {
+        return false;
+    }
+
+    //创建对象
+    var object = new Object();
+    //添加公有属性和方法
+    object.publicProperty = true;
+
+    object.publicMethod = function () {
+        privateVariable++;
+        return privateFunction();
+    };
+    //返回这个对象
+    return object;
+}();
+
+
 </script>
 </html>

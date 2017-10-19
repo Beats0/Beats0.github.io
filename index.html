@@ -158,8 +158,25 @@ layout: default
                 <div>
                     <i class="fa fa-map-marker"></i>
                     Map marker
+                    <a id="select"><i class="fa panel-toggle fa-chevron-circle-down" id="fa_down" style="float: right"></i></a>
                 </div>
-                <div style="margin: 0 auto">
+                <div id="select_forbiden" class="forbiden" style="margin: 0 auto">
+                    <script type="text/javascript">
+                        var select = document.getElementById('select');
+                        var fa_down = document.getElementById('fa_down');
+                        var select_forbiden = document.getElementById('select_forbiden');
+                        var i = 1;
+                        select.onclick = function () {
+                            i++;
+                            if (i % 2 == 0) {
+                                select_forbiden.className = '';
+                                fa_down.className = 'fa panel-toggle fa-chevron-circle-up';
+                            } else {
+                                select_forbiden.className = 'forbiden';
+                                fa_down.className = 'fa panel-toggle fa-chevron-circle-down';
+                            }
+                        };
+                    </script>
                     <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=5i51tityzb2&amp;m=8&amp;c=ff0000&amp;cr1=ffffff&amp;f=comic_sans_ms&amp;l=33" async="async"></script>
                 </div>
             </div>

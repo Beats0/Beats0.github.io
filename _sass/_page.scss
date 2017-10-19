@@ -128,6 +128,12 @@
                 font-size: 16px;
                 font-weight: bold;
             }
+            .forbiden {
+                height: 0;
+                display: none;
+                content: '';
+                overflow: hidden;
+            }
             a {
                 color: hotpink;
                 transition: 0.5s ease;
