@@ -909,18 +909,18 @@ ul.pills-zan li {
 
 .article iframe, .article embed {
     width: 100%;
-    height: 500px;
+    /*height: 500px;*/
 }
 
 @media (max-width: 1199px) {
     .article iframe, .article embed {
-        height: 350px;
+        height: 50px;
     }
 }
 
 @media (max-width: 767px) {
     .article iframe, .article embed {
-        height: 200px;
+        height: 50px;
     }
 }
 
@@ -1597,7 +1597,18 @@ embed[name*="Holmes"] {
 .ih-item.square.effect.colored .info h3 {
     background: rgba(12, 34, 52, 0.6)
 }
-
+.ih-item.square.effect .play {
+    position: relative;
+    margin: 0 auto;
+    height: 50px;
+    display: block;
+    overflow: hidden;
+}
+.play.mybody2 {
+    margin-bottom: 22px;
+    border-radius: 4px;
+    height: 34px;
+}
 .ih-item.square.effect .img {
     -webkit-transition: all .35s ease-in-out;
     -moz-transition: all .35s ease-in-out;
