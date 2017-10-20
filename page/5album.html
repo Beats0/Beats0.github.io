@@ -12,7 +12,7 @@ type: page
 
 <link rel="stylesheet" href="https://beats0.github.io/www.mygalgame.com/css/style.css">
 <link rel="stylesheet" href="/css/myblog.css">
-
+<script src="https://cdn.bootcss.com/aplayer/1.6.0/APlayer.min.js"></script>
 <style type="text/css">
     .cb-slideshow li:nth-child(1) span {
         background-image: url(https://ws1.sinaimg.cn/large/006nOlwNgy1fkddz3td1ij31hc0xcgpg.jpg);
@@ -111,13 +111,29 @@ type: page
                                                 编曲：Ryo<br>
                                                 发行时间：2012年08月29日<br></p>
                                         </div>
-                                        <div class="play">
-                                            <embed src="http://www.xiami.com/widget/45818524_1771257374/singlePlayer.swf" type="application/x-shockwave-flash" width="257" height="33" wmode="transparent"></embed>
-                                        </div>
+
                                     </a></div>
-                                    <a href="http://www.xiami.com/album/537161?spm=a1z1s.3061781.6856533.7.JPbanO"
-                                       target="_blank">
-                                    </a>
+
+
+                                        <div class="play">
+                                            <div id="aplayer0" class="aplayer" style="margin-bottom: 20px;">
+                                                <script>
+                                                    new APlayer({
+                                                        element: document.getElementById("aplayer0"),
+                                                        narrow: false,
+                                                        autoplay: false,
+                                                        showlrc: 0,
+                                                        music: {
+                                                            title: "ODDS&ENDS",
+                                                            author: "ryo;初音ミク",
+                                                            url: "http://m320.xiami.net/516/96516/537161/1771257374_3640897_h.mp3",
+                                                            pic: "https://ws1.sinaimg.cn/large/006nOlwNgy1fkp5wvf251j30dw0dsgnh.jpg",
+                                                        }
+                                                    });
+                                                </script>
+                                            </div>
+                                        </div>
+
                                     <p></p></div>
                             </section> <!-- 大型设备文章属性结束 --> <!-- 小型设备文章属性 -->
                             <section class="visible-xs">
@@ -153,13 +169,31 @@ type: page
                                     编曲：Ryo<br>
                                     发行时间：2012年08月29日<br>
                                 </div>
-                                <div class="play mybody2">
-                                    <embed src="http://www.xiami.com/widget/45818524_1771257374/singlePlayer.swf" type="application/x-shockwave-flash" width="257" height="33" wmode="transparent"></embed>
-                                </div>
+
+                                    <div class="play">
+                                        <div id="aplayer2" class="aplayer" style="margin-bottom: 20px;">
+                                            <script>
+                                                new APlayer({
+                                                    element: document.getElementById("aplayer2"),
+                                                    narrow: false,
+                                                    autoplay: false,
+                                                    showlrc: 0,
+                                                    music: {
+                                                        title: "ODDS&ENDS",
+                                                        author: "ryo;初音ミク",
+                                                        url: "http://m320.xiami.net/516/96516/537161/1771257374_3640897_h.mp3",
+                                                        pic: "https://ws1.sinaimg.cn/large/006nOlwNgy1fkp5wvf251j30dw0dsgnh.jpg",
+                                                    }
+                                                });
+                                            </script>
+                                        </div>
+                                    </div>
                                 <a class="btn btn-danger pull-right read-more btn-block"
                                    href="http://www.xiami.com/album/537161?spm=a1z1s.3061781.6856533.7.JPbanO"
-                                   title="详细阅读 ODDS&ENDS">more</a></section>
-                            <!-- 小型设备文章属性结束 --></div>
+                                   title="详细阅读 ODDS&ENDS">more</a>
+                            </section>
+                            <!-- 小型设备文章属性结束 -->
+                        </div>
 
 
                     </div>

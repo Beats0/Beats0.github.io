@@ -7,6 +7,11 @@ Jekyll theme by [Gaohaoyang](https://github.com/Gaohaoyang).<br>
 
 ### Update Log
 
+*2018.10.20*
+
+- `[^]` 添加音乐解析，使用[MoePlayer/APlayer](https://github.com/MoePlayer/APlayer)
+- `[^]` 添加Album栏
+
 *2018.10.11*
 
 - `[^]` 添加revolvermaps

@@ -1607,7 +1607,7 @@ embed[name*="Holmes"] {
 .play.mybody2 {
     margin-bottom: 22px;
     border-radius: 4px;
-    height: 34px;
+    height: 60px;
 }
 .ih-item.square.effect .img {
     -webkit-transition: all .35s ease-in-out;
