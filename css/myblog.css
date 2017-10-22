@@ -4264,3 +4264,6 @@ A {
     max-height: initial;
     opacity: 0;
 }
+.album_all {
+    font-family: sans-serif;
+}

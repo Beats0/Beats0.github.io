@@ -9,12 +9,12 @@ Jekyll theme by [Gaohaoyang](https://github.com/Gaohaoyang).<br>
 
 *2018.10.20*
 
-- `[^]` 添加音乐解析，使用[MoePlayer/APlayer](https://github.com/MoePlayer/APlayer)
 - `[^]` 添加Album栏
+- `[^]` 添加音乐解析，使用[MoePlayer/APlayer](https://github.com/MoePlayer/APlayer)
 
-*2018.10.11*
+*2018.10.15*
 
-- `[^]` 添加revolvermaps
+- `[^]` 添加revolvermaps标记
 
 *2018.10.11*
 

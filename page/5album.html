@@ -13,55 +13,112 @@ type: page
 <link rel="stylesheet" href="https://beats0.github.io/www.mygalgame.com/css/style.css">
 <link rel="stylesheet" href="/css/myblog.css">
 <script src="https://cdn.bootcss.com/aplayer/1.6.0/APlayer.min.js"></script>
-<style type="text/css">
-    .cb-slideshow li:nth-child(1) span {
-        background-image: url(https://ws1.sinaimg.cn/large/006nOlwNgy1fkddz3td1ij31hc0xcgpg.jpg);
-    }
 
-    .cb-slideshow li:nth-child(2) span {
-        background-image: url(https://ws1.sinaimg.cn/large/006nOlwNgy1fkddz3tiwoj31hc0xc0xl.jpg);
-    }
 
-    .cb-slideshow li:nth-child(3) span {
-        background-image: url(https://ws1.sinaimg.cn/large/006nOlwNgy1fkehkjgpkuj31ch0v9wib.jpg);
-    }
+<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+<link rel="stylesheet" href="../css/fade.css">
+<script>
 
-    .cb-slideshow li:nth-child(4) span {
-        background-image: url(https://ws1.sinaimg.cn/large/006nOlwNgy1fkehkk7dkhj31kw0w0agg.jpg);
-    }
+</script>
 
-    .cb-slideshow li:nth-child(5) span {
-        background-image: url(https://ws1.sinaimg.cn/large/006nOlwNgy1fkddz4ynamj31ao0t6n3t.jpg);
-    }
-
-    .cb-slideshow li:nth-child(6) span {
-        background-image: url(https://ws1.sinaimg.cn/large/006nOlwNgy1fkddz5uzy6j337b29enc4.jpg);
-    }
-
-</style>
 
 <section class="hidden-xs">
     <ul class="cb-slideshow">
-        <li><span>苟利</span></li>
-        <li><span>国家</span></li>
-        <li><span>生死以</span></li>
-        <li><span>岂能</span></li>
-        <li><span>祸福</span></li>
-        <li><span>趋避之</span></li>
+        <li><img class="li_img1"></li>
+        <li><img class="li_img2"></li>
+        <li><img class="li_img3"></li>
+        <li><img class="li_img4"></li>
+        <li><img class="li_img5"></li>
+        <li><img class="li_img6"></li>
     </ul>
 </section>
 <div class="grid">
     <div id="zan-bodyer">
         <div class="container">
             <div class="row">
+
+
+                <div id="mainstay" class="col-md-4">
+                    <div class="well mybody2">
+                        <h1 class="text-center album_all">Album</h1>
+                        <div class="login-panel text-center"><a href="https://github.com/Beats0"> <img
+                                src="https://avatars0.githubusercontent.com/u/29087203?s=460&v=4"
+                                width="60" height="60" alt="Beats0"
+                                class="avatar avatar-60 wp-user-avatar wp-user-avatar-60 alignnone photo"> </a>
+                            <p class="user-name">Beats0</p>
+                        </div>
+                        <p class="contact text-center"><a href="https://github.com/Beats0" title="GitHub"><i
+                                class="fa fa-github" aria-hidden="true"></i></a>
+                            <a href="mailto:2047155291@qq.com" title="Email"><i class="fa fa-envelope-o"
+                                                                                aria-hidden="true"></i></a>
+                            <a href="http://weibo.com/Beats0" title="Weibo"><i class="fa fa-weibo"
+                                                                               aria-hidden="true"></i></a>
+                            <a href="https://www.zhihu.com/people/beats0" title="Zhihu"><i
+                                    class="iconfont icon-daoruzhihu"></i></a>
+                            <a href="https://twitter.com/Beats0Ling" title="Twitter"><i class="fa fa-twitter"
+                                                                                        aria-hidden="true"></i></a>
+                            <a href="https://steamcommunity.com/id/2047155291" title="steam"><i class="fa fa-steam"
+                                                                                                aria-hidden="true"></i></a>
+                            <a href="https://space.bilibili.com/598848/#!/" title="bilibili"><i
+                                    class="fa fa-play-circle" aria-hidden="true"></i></a>
+                            <a href="https://yande.re/user/show/273112" title="yande.re"><i class="fa fa-y-combinator"
+                                                                                            aria-hidden="true"></i></a>
+                            <a href="http://music.163.com/#/user/home?id=566378573" title="music.163"><i
+                                    class="fa fa-music" aria-hidden="true"></i></a>
+                            <a href="http://www.xiami.com/u/45818524?spm=a1z1s.6928797.1561534497.1.LvT529" title="music.xiami"><i
+                                    class="fa fa-music" aria-hidden="true"></i></a>
+                        </p>
+                    </div>
+
+                    <div class="well mybody2">
+                        <h1 class="text-center album_all">Album</h1>
+                        <div id="player4" class="aplayer">
+                            <script>
+                                var ap4 = new APlayer({
+                                    element: document.getElementById('player4'),
+                                    narrow: false,
+                                    autoplay: false,
+                                    showlrc: false,
+                                    mutex: true,
+                                    theme: '#ad7a86',
+                                    mode: 'random',
+                                    music: [
+                                        {
+                                            title: 'ODDS&ENDS',
+                                            author: 'ryo;初音ミク',
+                                            url: 'http://m320.xiami.net/516/96516/537161/1771257374_3640897_h.mp3',
+                                            pic: 'https://ws1.sinaimg.cn/large/006nOlwNgy1fkp5wvf251j30dw0dsgnh.jpg'
+
+                                        },
+                                        {
+                                            title: 'さよならさよなら',
+                                            author: 'tsunenori',
+                                            url: 'http://m192.xiami.net/895/63895/504274/1770912191_3159964_l.mp3',
+                                            pic: 'http://pic.xiami.net/images/album/img95/63895/5042741333180314.jpg'
+                                        },
+                                        {
+                                            title: '届かない恋',
+                                            author: '茅野愛衣',
+                                            url: 'http://m320.xiami.net/898/93898/2102864160/1796815676_1506438455909.mp3',
+                                            pic: 'http://pic.xiami.net/images/album/img86/438186/4381861506438187.jpg'
+                                        }
+                                    ]
+                                });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+
+
                 <div class="col-md-8">
                     <div class="well mybody2" id="topic_show">
                         <button type="button" class="close" id="close" data-dismiss="alert">×</button>
                         <b><font color="#FF0000">My Music Album and Photo Album<br>
-                            <br>Xiami Music:
-                            <br>http://www.xiami.com/u/45818524?spm=a1z1s.6928797.1561534497.2.VUtVze
+                            <br>Xiami Music:&nbsp;&nbsp; http://www.xiami.com/u/45818524?spm=a1z1s.6928797.1561534497.2.VUtVze
+                            <br>Music.163:&nbsp;&nbsp; http://music.163.com/#/user/home?id=566378573
                             <br>
-                            <br>Game:
+                            <br>mygalgame.com:
+                            <br>www.mygalgame.com
                             <br>https://beats0.github.io/www.mygalgame.com<br>
                             <br>╮(￣▽￣)╭</font></b><br>
                     </div>
@@ -104,7 +161,9 @@ type: page
                                                 alt="ODDS&ENDS"></div>
                                         <div class="info">
                                             <p>《ODDS&ENDS/Sky of Beginning》<br>
-                                                SEGAの大人気ゲームソフト『初音ミク-Project DIVA-』シリーズのテーマソングを『こっち向いてBaby』『積乱雲グラフィティ』に引き続き、今年8月30日に発売されるシリーズ最新作『初音ミク-Project DIVA-f』オープニングテーマも、ryo（supercell）が手掛けます！<br>
+                                                SEGAの大人気ゲームソフト『初音ミク-Project
+                                                DIVA-』シリーズのテーマソングを『こっち向いてBaby』『積乱雲グラフィティ』に引き続き、今年8月30日に発売されるシリーズ最新作『初音ミク-Project
+                                                DIVA-f』オープニングテーマも、ryo（supercell）が手掛けます！<br>
                                                 <br>
                                                 演唱者：初音ミク<br>
                                                 作词：Ryo<br>
@@ -115,24 +174,25 @@ type: page
                                     </a></div>
 
 
-                                        <div class="play">
-                                            <div id="aplayer0" class="aplayer" style="margin-bottom: 20px;">
-                                                <script>
-                                                    new APlayer({
-                                                        element: document.getElementById("aplayer0"),
-                                                        narrow: false,
-                                                        autoplay: false,
-                                                        showlrc: 0,
-                                                        music: {
-                                                            title: "ODDS&ENDS",
-                                                            author: "ryo;初音ミク",
-                                                            url: "http://m320.xiami.net/516/96516/537161/1771257374_3640897_h.mp3",
-                                                            pic: "https://ws1.sinaimg.cn/large/006nOlwNgy1fkp5wvf251j30dw0dsgnh.jpg",
-                                                        }
-                                                    });
-                                                </script>
-                                            </div>
+                                    <div class="play">
+                                        <div id="aplayer0" class="aplayer" style="margin-bottom: 20px;">
+                                            <script>
+                                                new APlayer({
+                                                    element: document.getElementById("aplayer0"),
+                                                    narrow: false,
+                                                    autoplay: false,
+                                                    showlrc: 0,
+                                                    music: {
+                                                        title: "ODDS&ENDS",
+                                                        author: "ryo;初音ミク",
+                                                        url: "http://m320.xiami.net/516/96516/537161/1771257374_3640897_h.mp3",
+                                                        pic: "https://ws1.sinaimg.cn/large/006nOlwNgy1fkp5wvf251j30dw0dsgnh.jpg",
+                                                    }
+                                                });
+                                            </script>
                                         </div>
+                                    </div>
+
 
                                     <p></p></div>
                             </section> <!-- 大型设备文章属性结束 --> <!-- 小型设备文章属性 -->
@@ -162,7 +222,9 @@ type: page
                                 </p></div>
                                 <div class="alert alert-zan">
                                     《ODDS&ENDS/Sky of Beginning》<br>
-                                    SEGAの大人気ゲームソフト『初音ミク-Project DIVA-』シリーズのテーマソングを『こっち向いてBaby』『積乱雲グラフィティ』に引き続き、今年8月30日に発売されるシリーズ最新作『初音ミク-Project DIVA-f』オープニングテーマも、ryo（supercell）が手掛けます！<br>
+                                    SEGAの大人気ゲームソフト『初音ミク-Project
+                                    DIVA-』シリーズのテーマソングを『こっち向いてBaby』『積乱雲グラフィティ』に引き続き、今年8月30日に発売されるシリーズ最新作『初音ミク-Project
+                                    DIVA-f』オープニングテーマも、ryo（supercell）が手掛けます！<br>
                                     <br>
                                     演唱者：初音ミク<br>
                                     作词：Ryo<br>
@@ -170,24 +232,24 @@ type: page
                                     发行时间：2012年08月29日<br>
                                 </div>
 
-                                    <div class="play">
-                                        <div id="aplayer2" class="aplayer" style="margin-bottom: 20px;">
-                                            <script>
-                                                new APlayer({
-                                                    element: document.getElementById("aplayer2"),
-                                                    narrow: false,
-                                                    autoplay: false,
-                                                    showlrc: 0,
-                                                    music: {
-                                                        title: "ODDS&ENDS",
-                                                        author: "ryo;初音ミク",
-                                                        url: "http://m320.xiami.net/516/96516/537161/1771257374_3640897_h.mp3",
-                                                        pic: "https://ws1.sinaimg.cn/large/006nOlwNgy1fkp5wvf251j30dw0dsgnh.jpg",
-                                                    }
-                                                });
-                                            </script>
-                                        </div>
+                                <div class="play">
+                                    <div id="aplayer2" class="aplayer" style="margin-bottom: 20px;">
+                                        <script>
+                                            new APlayer({
+                                                element: document.getElementById("aplayer2"),
+                                                narrow: false,
+                                                autoplay: false,
+                                                showlrc: 0,
+                                                music: {
+                                                    title: "ODDS&ENDS",
+                                                    author: "ryo;初音ミク",
+                                                    url: "http://m320.xiami.net/516/96516/537161/1771257374_3640897_h.mp3",
+                                                    pic: "https://ws1.sinaimg.cn/large/006nOlwNgy1fkp5wvf251j30dw0dsgnh.jpg",
+                                                }
+                                            });
+                                        </script>
                                     </div>
+                                </div>
                                 <a class="btn btn-danger pull-right read-more btn-block"
                                    href="http://www.xiami.com/album/537161?spm=a1z1s.3061781.6856533.7.JPbanO"
                                    title="详细阅读 ODDS&ENDS">more</a>
@@ -199,32 +261,7 @@ type: page
                     </div>
                 </div>
 
-                <div id="mainstay" class="col-md-4">
-                    <div class="well mybody2"><h1 class="text-center">Album</h1>
-                        <div class="login-panel text-center"><a href="https://github.com/Beats0"> <img
-                                src="https://avatars0.githubusercontent.com/u/29087203?s=460&v=4"
-                                width="60" height="60" alt="Beats0"
-                                class="avatar avatar-60 wp-user-avatar wp-user-avatar-60 alignnone photo"> </a>
-                            <p class="user-name">Beats0</p>
-                        </div>
-                        <p class="contact text-center"><a href="https://github.com/Beats0" title="GitHub"><i
-                                class="fa fa-github" aria-hidden="true"></i></a>
-                            <a href="mailto:2047155291@qq.com" title="Email"><i class="fa fa-envelope-o"
-                                                                                aria-hidden="true"></i></a>
-                            <a href="http://weibo.com/Beats0" title="Weibo"><i class="fa fa-weibo"
-                                                                               aria-hidden="true"></i></a>
-                            <a href="https://www.zhihu.com/people/beats0" title="Zhihu"><i
-                                    class="iconfont icon-daoruzhihu"></i></a>
-                            <a href="https://twitter.com/Beats0Ling" title="Twitter"><i class="fa fa-twitter"
-                                                                                        aria-hidden="true"></i></a>
-                            <a href="https://steamcommunity.com/id/2047155291" title="steam"><i class="fa fa-steam" aria-hidden="true"></i></a>
-                            <a href="hhttps://space.bilibili.com/598848/#!/" title="bilibili"><i class="fa fa-play-circle" aria-hidden="true"></i></a>
-                            <a href="https://yande.re/user/show/273112" title="yande.re"><i class="fa fa-y-combinator" aria-hidden="true"></i></a>
-                            <a href="http://music.163.com/#/user/home?id=566378573" title="music.163"><i class="fa fa-music" aria-hidden="true"></i></a>
 
-                        </p>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
@@ -236,7 +273,8 @@ type: page
 <!-- 包含了所有编译插件 -->
 <script type="text/javascript" src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<script type="text/javascript" src="/js/aos.js"></script>
+<script type="text/javascript" src="../js/fade.js"></script>
+<script type="text/javascript" src="../js/aos.js"></script>
 <script>
     AOS.init({
         easing: 'ease-out-back',
@@ -253,10 +291,5 @@ type: page
     });
 </script>
 
-<!--<script src="{{ " /js/masonry.pkgd.min.js " | prepend: site.baseurl }}" charset="utf-8"></script>-->
-<!--<script src="{{ " /js/waterfall.js " | prepend: site.baseurl }}" charset="utf-8"></script>-->
-
-
-<!-- <h2 id="comments">Comments</h2> -->
 
 {% include comments.html %}
