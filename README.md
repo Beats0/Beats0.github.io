@@ -9,7 +9,7 @@ Jekyll theme by [Gaohaoyang](https://github.com/Gaohaoyang).<br>
 
 *2018.10.23*
 
-- `[^]`[背景随机渐变图片Demo]()
+- `[^]`[背景随机渐变图片Demo](https://github.com/Beats0/Demo/blob/master/mygalgame/random/random.html)
 
 *2018.10.22*
 

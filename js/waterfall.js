@@ -14,6 +14,13 @@
      */
   var demoContent = [
       {
+          demo_link: 'https://github.com/Beats0/Demo/blob/master/mygalgame/random/random.html',
+          img_link: 'https://raw.githubusercontent.com/Beats0/Demo/master/mygalgame/images/logo.png',
+          code_link: 'https://github.com/Beats0/Demo/blob/master/mygalgame/random/random.html',
+          title: '仿mygalgame网站界面的背景随机变换',
+          core_tech: 'JavaScript jQuery',
+          description: '仿mygalgame网站界面的背景随机变换，图片以数组形式传入url()值，使用js随机数,让两个随机数相加生成另一个随机数，使图片显示更加随机，重复性按照图片数量的增大而减小(重复性几率依然存在，几率视情况而定。</a>。'
+      },{
           demo_link: 'https://beats0.github.io/Demo/mygalgame',
           img_link: 'https://raw.githubusercontent.com/Beats0/Demo/master/mygalgame/images/logo.png',
           code_link: 'https://github.com/Beats0/Demo/tree/master/mygalgame',
