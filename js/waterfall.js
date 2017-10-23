@@ -19,14 +19,14 @@
           code_link: 'https://github.com/Beats0/Demo/blob/master/mygalgame/random/random.html',
           title: '仿mygalgame网站界面的背景随机变换',
           core_tech: 'JavaScript jQuery',
-          description: '仿mygalgame网站界面的背景随机变换，图片以数组形式传入url()值，使用js随机数,让两个随机数相加生成另一个随机数，使图片显示更加随机，重复性按照图片数量的增大而减小(重复性几率依然存在，几率视情况而定。</a>。'
+          description: '仿mygalgame网站界面的背景随机变换，图片以数组形式传入url()值，使用js随机数,让两个随机数相加生成另一个随机数，使图片显示更加随机，重复性按照图片数量的增大而减小(重复性几率依然存在，重复性几率视情况而定'
       },{
           demo_link: 'https://beats0.github.io/Demo/mygalgame',
           img_link: 'https://raw.githubusercontent.com/Beats0/Demo/master/mygalgame/images/logo.png',
           code_link: 'https://github.com/Beats0/Demo/tree/master/mygalgame',
           title: '部分mygalgame网站界面',
           core_tech: 'Bootstrap JavaScript jQuery worldpress',
-          description: '下载mygalgame网站前端界面，网站的主题也做得非常好， 就当是网站的备份，全部网站访问https://github.com/Beats0/www.mygalgame.com<a href =“https://github.com/Beats0/Demo/tree/master/mygalgame">这里</a>。'
+          description: '下载mygalgame网站前端界面，网站的主题也做得非常好， 就当是网站的备份，原网站地址：www.mygalgame.com,GitHub备份网站地址访问:https://github.com/Beats0/www.mygalgame.com'
       },{
           demo_link: 'https://beats0.github.io/Demo/bilibili_2016',
           img_link: 'http://static.hdslb.com/live-static/live-index-v4/static/img/img.hinter.46822ec.jpg',
