@@ -58,11 +58,11 @@ $(document).ready(function(){
     m = Math.floor(Math.random()*(Math.floor((post_thumbnail_link.length)/2))+1);
     n = Math.floor(Math.random()*(Math.floor((post_thumbnail_link.length)/2))+1);
 
-    $('.li_img1').attr('src', post_thumbnail_link[i]);
-    $('.li_img2').attr('src', post_thumbnail_link[i+j]);
-    $('.li_img3').attr('src', post_thumbnail_link[i+k]);
-    $('.li_img4').attr('src', post_thumbnail_link[i+l]);
-    $('.li_img5').attr('src', post_thumbnail_link[i+m]);
-    $('.li_img6').attr('src', post_thumbnail_link[i+n]);
+    $(".li_img1").css('backgroundImage','url(' + post_thumbnail_link[i] + ')');
+    $(".li_img2").css('backgroundImage','url(' + post_thumbnail_link[i+j] + ')');
+    $(".li_img3").css('backgroundImage','url(' + post_thumbnail_link[i+k] + ')');
+    $(".li_img4").css('backgroundImage','url(' + post_thumbnail_link[i+l] + ')');
+    $(".li_img5").css('backgroundImage','url(' + post_thumbnail_link[i+m] + ')');
+    $(".li_img6").css('backgroundImage','url(' + post_thumbnail_link[i+n] + ')');
 
 });

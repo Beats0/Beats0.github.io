@@ -7,6 +7,10 @@ Jekyll theme by [Gaohaoyang](https://github.com/Gaohaoyang).<br>
 
 ### Update Log
 
+*2018.10.23*
+
+- `[^]`[背景随机渐变图片Demo]()
+
 *2018.10.22*
 
 - `[^]` Album栏背景随机，代码详见[fade.css](https://github.com/Beats0/Beats0.github.io/blob/master/css/fade.css)与[fade.js](https://github.com/Beats0/Beats0.github.io/blob/master/js/fade.js)

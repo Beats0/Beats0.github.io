@@ -1,342 +1,166 @@
-<!--<!DOCTYPE html>-->
-<!--<html lang="en">-->
-<!--<head>-->
-    <!--<meta charset="UTF-8">-->
-    <!--<title>test</title>-->
-    <!--<link rel="script" href="test.js">-->
-<!--</head>-->
-<!--<body>-->
-
-<!--</body>-->
-<!--<script>-->
-<!--//    function compare(value1, value2) {-->
-<!--//        return value2-value1;-->
-<!--//    }-->
-<!--//    var values = [0, 1, 5, 10, 15];-->
-<!--//    values.sort(compare);-->
-<!--//    console.log(values);-->
-    <!--var numbers = [1,2,3,4,5,4,3,2,1];-->
-    <!--alert(numbers.indexOf(4));              //3-->
-    <!--alert(numbers.lastIndexOf(4));          //5-->
-
-    <!--alert(numbers.indexOf(4,4));              //5-->
-    <!--alert(numbers.lastIndexOf(4,4));          //3-->
-
-    <!--console.log(numbers.indexOf(7))            //-1-->
-
-<!--//function createPerson(name, age) {-->
-<!--//    var o = new Object();-->
-<!--//    o.name = name;-->
-<!--//    o.age = age;-->
-<!--//    o.sayName= function() {-->
-<!--//        alert(this.name);-->
-<!--//    };-->
-<!--//    return o;-->
-<!--//}-->
-<!--//-->
-<!--//var person1 = createPerson('Nicholas', 29);-->
-
-<!--//function Person() {-->
-<!--//}-->
-<!--//-->
-<!--//Person.prototype.name = "Nicholas";-->
-<!--//Person.prototype.age = 29;-->
-<!--//Person.prototype.sayName = function () {-->
-<!--//    alert(this.name);-->
-<!--//};-->
-<!--//var keys = Object.keys(Person.prototype);-->
-<!--//alert(keys);        //name,age,sayName-->
-<!--//-->
-<!--//var person1 = new Person();-->
-<!--//person1.name = "Rob";-->
-<!--//person1.age = 31;-->
-<!--//var person1keys = Object.keys(person1);-->
-<!--//alert(person1keys);     //name,age-->
-
-<!--//function SpecialArray() {-->
-<!--//    var values = new Array();-->
-<!--//    values.push.apply(values, arguments);-->
-<!--//    values.toPipedString = function () {-->
-<!--//        return this.join("|");-->
-<!--//    };-->
-<!--//    return values;-->
-<!--//}-->
-<!--//-->
-<!--//var colors = new SpecialArray("red", "blue", "green");-->
-<!--//console.log(colors.toPipedString());        //red|blue|green-->
-
-<!--//function Person(name, age) {-->
-<!--//    var o = new Object();-->
-<!--//    o.sayname = function () {-->
-<!--//        alert(name);-->
-<!--//    };-->
-<!--//    return o;-->
-<!--//}-->
-<!--//-->
-<!--//var frind = Person("Nicholas", 29);-->
-<!--//frind.sayname();-->
-
-<!--//function SuperType(){-->
-<!--//    this.name = 'Nicholas';-->
-<!--//    this.friends =['David','Bob','Lucy'];-->
-<!--//    this.sayName = function(){-->
-<!--//        alert(this.name);-->
-<!--//    }-->
-<!--//}-->
-<!--//-->
-<!--//function SubType(){-->
-<!--//    SuperType.call(this);-->
-<!--//}-->
-<!--//-->
-<!--//var subType = new SubType();-->
-<!--//subType.sayName();-->
-
-<!--//function SuperType(name){-->
-<!--//    this.name = name;-->
-<!--//}-->
-<!--//-->
-<!--//function SubType(){-->
-<!--//    //继承SuperType，同时传递参数-->
-<!--//    SuperType.call(this,"Nicholas");-->
-<!--//-->
-<!--//    //实例属性-->
-<!--//    this.age=29;-->
-<!--//}-->
-<!--//-->
-<!--//var instance = new SubType();-->
-<!--//console.log(instance.name);-->
-<!--//console.log(instance.age);-->
-
-<!--//function factorial(num) {-->
-<!--//    if (num <= 1) {-->
-<!--//        return 1-->
-<!--//    } else {-->
-<!--//        return num * factorial(num - 1)-->
-<!--//    }-->
-<!--//}-->
-<!--//-->
-<!--//console.log(factorial(4));  //24-->
-<!--//var anotherfactorial = factorial;-->
-<!--//factorial = null;-->
-<!--//console.log(anotherfactorial(4))  //TypeError: factorial is not a function-->
-
-<!--// var factorial=(function f(num) {-->
-<!--//    if (num <= 1) {-->
-<!--//        return 1;-->
-<!--//    } else {-->
-<!--//        return num * f(num - 1);-->
-<!--//    }-->
-<!--//});-->
-<!--//-->
-<!--//console.log(factorial(4));-->
-
-<!--//    var someFunction=function () {-->
-<!--//        //块级作用域-->
-<!--//    };-->
-<!--//    someFunction()();-->
-
-<!--var singleton = function () {-->
-    <!--//私有变量和函数-->
-    <!--var privateVariable = 10;-->
-
-    <!--function privateFunction() {-->
-        <!--return false;-->
-    <!--}-->
-
-    <!--//创建对象-->
-    <!--var object = new Object();-->
-    <!--//添加公有属性和方法-->
-    <!--object.publicProperty = true;-->
-
-    <!--object.publicMethod = function () {-->
-        <!--privateVariable++;-->
-        <!--return privateFunction();-->
-    <!--};-->
-    <!--//返回这个对象-->
-    <!--return object;-->
-<!--}();-->
-
-
-<!--</script>-->
-<!--</html>-->
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
-    <script language="javascript">
-
-        var url = new Array();
-        url[0] = "http://www.yahoo.com";
-        url[1] = "http://www.jb51.net";
-        url[2] = "http://www.baidu.com";
-        i = Math.random() * url.length;
-        i = Math.floor(i);
-        str = "<a id='linkID' href='" + url[i] + "'>";
-
-        document.write(str + "本链接是随机产生的，刷新页面会更换。</a><br>");
-        document.write(url[i].toString());
-        document.write(linkID.href);
-    </script>
-
-    <script>
-        (function () {
-            document.write("<section class=\"hidden-xs\">");
-            document.write("<ul class=\"cb-slideshow\">");
-            var url = new Array();
-            url[0] = "http://www.yahoo.com";
-            url[1] = "http://www.jb51.net";
-            url[2] = "http://www.baidu.com";
-            i = Math.random() * url.length;
-            i = Math.floor(i);
-            str = "<a id='linkID' href='" + url[i] + "'>";
-
-            document.write(str + "本链接是随机产生的，刷新页面会更换。</a><br>");
-            document.write(url[i].toString());
-            document.write(linkID.href);
-            (function () {
-                var post_thumbnail_link = new Array();
-                post_thumbnail_link[0] = "https://ws1.sinaimg.cn/large/006nOlwNgy1fkp5wvf251j30dw0dsgnh.jpg";
-                post_thumbnail_link[1] = "https://ws1.sinaimg.cn/large/006nOlwNgy1fkddz5uzy6j337b29enc4.jpg";
-                post_thumbnail_link[2] = "https://ws1.sinaimg.cn/large/006nOlwNgy1fkddz4ynamj31ao0t6n3t.jpg";
-                post_thumbnail_link[3] = "https://ws1.sinaimg.cn/large/006nOlwNgy1fkehkk7dkhj31kw0w0agg.jpg";
-
-                i = Math.random() * post_thumbnail_link.length;
-                i = Math.floor(i);
-                var post_thumbnail_random = 'url(post_thumbnail_link[1])';
-                $('.span1').css("background-image",post_thumbnail_random);
-            }());
-
-
-
-
-//            $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
-//            $('.post_thumbnail-random').attr('src', 'https://ws1.sinaimg.cn/large/006nOlwNgy1fkp5wvf251j30dw0dsgnh.jpg');
-//            $('.post_thumbnail-random').addClass('lazy');
-
-            document.write("<li><span>");
-            document.write("</span></li>");
-
-
-
-
-            document.write("</ul>");
-            document.write("</section>");
-        }());
-
-
-//        document.write("<table style='border: 1px solid black'>");
-//        for (var i = 1;i <= 9;i++) {
-//            document.write("<tr>");
-//            for (var j = 1;j <= i;j++) {
-//                document.write("<td style='text-align: center;border: 1px solid black'>");
-//                document.write(i + "X" + j + "=" + i*j);
-//                document.write("</td>");
-//            }
-//            // document.write("<br/>");
-//            document.write("</tr>");
-//        }
-//        document.write("</table>");
-    </script>
-
-
-
-
-    <script>
-        $(document).ready(function(){
-            var randomNum = Math.floor(Math.random() * 19 + 1);
-            $("button").click(function(){
-                $("p:first").addClass("intro note");
-
-                $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
-                $('.post_thumbnail-random').attr('src', 'https://ws1.sinaimg.cn/large/006nOlwNgy1fkp5wvf251j30dw0dsgnh.jpg');
-                $('.post_thumbnail-random').addClass('lazy');
-            });
-        });
-    </script>
-    <style>
-        .intro{
-            font-size:30px;
-            color:blue;
-        }
-        .note{
-            background-color:yellow;
-        }
-    </style>
+<meta charset="UTF-8">
+<title>test</title>
+<link rel="script" href="test.js">
 </head>
 <body>
 
-
-<ul class="cb-slideshow">
-    <li><span class="span1">苟利</span></li>
-    <li><span class="span2">国家</span></li>
-    <li><span class="span3">生死以</span></li>
-    <li><span class="span4">岂能</span></li>
-    <li><span class="span5">祸福</span></li>
-    <li><span class="span6">趋避之</span></li>
-</ul>
-
-
-
-<h1>这是一个标题</h1>
-<p>这是一个段落。</p>
-<p>这是另一个段落。</p>
-<button>为第一个P元素添加两个类名</button>
-<script language="javascript">
-
-
-
-</script>
-<img src="" class="post_thumbnail-random">
-<!--$('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');-->
-
-
-<!--<img title="hat.gif"/>-->
-<!--<script>-->
-    <!--$("img").attr("src", function() {-->
-        <!--return "images/" + this.title;-->
-    <!--});-->
-<!--</script>-->
-
-<a href=""></a>
-<img href="" src="" id="a">
-<script>
-//    var img = [
-//        {
-//            url: '1',
-//            href: '1'
-//        },
-//        {
-//            url: '2',
-//            href: '2'
-//        }
-//    ];
-//    var num = Math.floor(Math.random() * img.length);
-//    $('a').attr({href: img[num].href}).find('img').attr({src: img[num].url});
-//    var img = [
-//        {
-//            url: 'https://ws1.sinaimg.cn/large/006nOlwNgy1fkp5wvf251j30dw0dsgnh.jpg',
-//            href: 'https://ws1.sinaimg.cn/large/006nOlwNgy1fkp5wvf251j30dw0dsgnh.jpg'
-//        },
-//        {
-//            url: 'https://ws1.sinaimg.cn/large/006nOlwNgy1fkehkjgpkuj31ch0v9wib.jpg',
-//            href: 'https://ws1.sinaimg.cn/large/006nOlwNgy1fkehkjgpkuj31ch0v9wib.jpg'
-//        }
-//    ];
-//    var num = Math.floor(Math.random() * img.length);
-//    $('a').attr({href: img[num].href}).find('img').attr({src: img[num].url});
-</script>
-
-<div class="post_thumbnail-custom post_thumbnail-random">
-    <!-- Author Avatar & Name -->
-
-
-</div>
-
 </body>
+<script>
+//    function compare(value1, value2) {
+//        return value2-value1;
+//    }
+//    var values = [0, 1, 5, 10, 15];
+//    values.sort(compare);
+//    console.log(values);
+var numbers = [1,2,3,4,5,4,3,2,1];
+alert(numbers.indexOf(4));              //3
+alert(numbers.lastIndexOf(4));          //5
+
+alert(numbers.indexOf(4,4));              //5
+alert(numbers.lastIndexOf(4,4));          //3
+
+console.log(numbers.indexOf(7))            //-1
+
+//function createPerson(name, age) {
+//    var o = new Object();
+//    o.name = name;
+//    o.age = age;
+//    o.sayName= function() {
+//        alert(this.name);
+//    };
+//    return o;
+//}
+//
+//var person1 = createPerson('Nicholas', 29);
+
+//function Person() {
+//}
+//
+//Person.prototype.name = "Nicholas";
+//Person.prototype.age = 29;
+//Person.prototype.sayName = function () {
+//    alert(this.name);
+//};
+//var keys = Object.keys(Person.prototype);
+//alert(keys);        //name,age,sayName
+//
+//var person1 = new Person();
+//person1.name = "Rob";
+//person1.age = 31;
+//var person1keys = Object.keys(person1);
+//alert(person1keys);     //name,age
+
+//function SpecialArray() {
+//    var values = new Array();
+//    values.push.apply(values, arguments);
+//    values.toPipedString = function () {
+//        return this.join("|");
+//    };
+//    return values;
+//}
+//
+//var colors = new SpecialArray("red", "blue", "green");
+//console.log(colors.toPipedString());        //red|blue|green
+
+//function Person(name, age) {
+//    var o = new Object();
+//    o.sayname = function () {
+//        alert(name);
+//    };
+//    return o;
+//}
+//
+//var frind = Person("Nicholas", 29);
+//frind.sayname();
+
+//function SuperType(){
+//    this.name = 'Nicholas';
+//    this.friends =['David','Bob','Lucy'];
+//    this.sayName = function(){
+//        alert(this.name);
+//    }
+//}
+//
+//function SubType(){
+//    SuperType.call(this);
+//}
+//
+//var subType = new SubType();
+//subType.sayName();
+
+//function SuperType(name){
+//    this.name = name;
+//}
+//
+//function SubType(){
+//    //继承SuperType，同时传递参数
+//    SuperType.call(this,"Nicholas");
+//
+//    //实例属性
+//    this.age=29;
+//}
+//
+//var instance = new SubType();
+//console.log(instance.name);
+//console.log(instance.age);
+
+//function factorial(num) {
+//    if (num <= 1) {
+//        return 1
+//    } else {
+//        return num * factorial(num - 1)
+//    }
+//}
+//
+//console.log(factorial(4));  //24
+//var anotherfactorial = factorial;
+//factorial = null;
+//console.log(anotherfactorial(4))  //TypeError: factorial is not a function
+
+// var factorial=(function f(num) {
+//    if (num <= 1) {
+//        return 1;
+//    } else {
+//        return num * f(num - 1);
+//    }
+//});
+//
+//console.log(factorial(4));
+
+//    var someFunction=function () {
+//        //块级作用域
+//    };
+//    someFunction()();
+
+var singleton = function () {
+//私有变量和函数
+var privateVariable = 10;
+
+function privateFunction() {
+return false;
+}
+
+//创建对象
+var object = new Object();
+//添加公有属性和方法
+object.publicProperty = true;
+
+object.publicMethod = function () {
+privateVariable++;
+return privateFunction();
+};
+//返回这个对象
+return object;
+}();
+
+
+</script>
 </html>
+
+
+
 
 

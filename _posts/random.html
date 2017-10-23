@@ -2,66 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>random</title>
-    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <title>Background Random Demo</title>
+    <link rel="stylesheet" href="../css/bootstrap_v1.css">
     <link rel="stylesheet" href="../css/fade.css">
-    <script>
-        $(document).ready(function(){
-            var post_thumbnail_link = new Array();
-            post_thumbnail_link[0] = "https://ws1.sinaimg.cn/large/006nOlwNgy1fkp5wvf251j30dw0dsgnh.jpg";
-            post_thumbnail_link[1] = "https://ws1.sinaimg.cn/large/006nOlwNgy1fkddz5uzy6j337b29enc4.jpg";
-            post_thumbnail_link[2] = "https://ws1.sinaimg.cn/large/006nOlwNgy1fkddz4ynamj31ao0t6n3t.jpg";
-            post_thumbnail_link[3] = "https://ws1.sinaimg.cn/large/006nOlwNgy1fkehkk7dkhj31kw0w0agg.jpg";
-            post_thumbnail_link[4] = "https://ws1.sinaimg.cn/large/006nOlwNgy1fkddz3td1ij31hc0xcgpg.jpg";
-            post_thumbnail_link[5] = "https://ws1.sinaimg.cn/large/006nOlwNgy1fkddz3tiwoj31hc0xc0xl.jpg";
-            post_thumbnail_link[6] = "https://ws3.sinaimg.cn/large/005ODKsIgw1faokobn7xkj31hc0van40.jpg";
-            post_thumbnail_link[7] = "https://ws4.sinaimg.cn/large/005ODKsIgw1fakzte9yx5j31hc11qai4.jpg";
-            post_thumbnail_link[8] = "https://ws2.sinaimg.cn/large/005ODKsIgw1fakztgdtrgj31hc10u0zf.jpg";
-            post_thumbnail_link[9] = "https://ws2.sinaimg.cn/large/005ODKsIgw1fal05czziwj31hc0u0q9f.jpg";
-            post_thumbnail_link[10] = "https://ws2.sinaimg.cn/large/005ODKsIgw1fajzs4gcc7j31hc0u0grh.jpg";
-            post_thumbnail_link[11] = "https://ws4.sinaimg.cn/large/005ODKsIgw1faok661v7ej31hc0u0afy.jpg";
-            post_thumbnail_link[12] = "https://ws1.sinaimg.cn/large/006nOlwNgy1fkp5wvf251j30dw0dsgnh.jpg";
-            post_thumbnail_link[13] = "https://ws1.sinaimg.cn/large/006nOlwNgy1fkddz5uzy6j337b29enc4.jpg";
-            post_thumbnail_link[14] = "https://ws1.sinaimg.cn/large/006nOlwNgy1fkddz4ynamj31ao0t6n3t.jpg";
-            post_thumbnail_link[15] = "https://ws1.sinaimg.cn/large/006nOlwNgy1fkehkk7dkhj31kw0w0agg.jpg";
-            post_thumbnail_link[16] = "https://ws1.sinaimg.cn/large/006nOlwNgy1fkddz3td1ij31hc0xcgpg.jpg";
-            post_thumbnail_link[17] = "https://ws1.sinaimg.cn/large/006nOlwNgy1fkddz3tiwoj31hc0xc0xl.jpg";
-            post_thumbnail_link[18] = "https://ws3.sinaimg.cn/large/005ODKsIgw1faokobn7xkj31hc0van40.jpg";
-            post_thumbnail_link[19] = "https://ws4.sinaimg.cn/large/005ODKsIgw1fakzte9yx5j31hc11qai4.jpg";
-            post_thumbnail_link[20] = "https://ws2.sinaimg.cn/large/005ODKsIgw1fakztgdtrgj31hc10u0zf.jpg";
-            post_thumbnail_link[21] = "https://ws2.sinaimg.cn/large/005ODKsIgw1fal05czziwj31hc0u0q9f.jpg";
-            post_thumbnail_link[22] = "https://ws2.sinaimg.cn/large/005ODKsIgw1fajzs4gcc7j31hc0u0grh.jpg";
-            post_thumbnail_link[23] = "https://ws4.sinaimg.cn/large/005ODKsIgw1faok661v7ej31hc0u0afy.jpg";
-
-            i = Math.floor(Math.random()*10)+1;
-//            i = Math.floor(Math.random()*300)+1;
-//            j = Math.floor(Math.random()*300)+1;
-//            k = Math.floor(Math.random()*300)+1;
-//            l = Math.floor(Math.random()*300)+1;
-//            m = Math.floor(Math.random()*300)+1;
-//            n = Math.floor(Math.random()*300)+1;
-
-            $('.li_img1').attr('src', post_thumbnail_link[i]);
-            $('.li_img2').attr('src', post_thumbnail_link[i+1]);
-            $('.li_img3').attr('src', post_thumbnail_link[i+2]);
-            $('.li_img4').attr('src', post_thumbnail_link[i+3]);
-            $('.li_img5').attr('src', post_thumbnail_link[i+4]);
-            $('.li_img6').attr('src', post_thumbnail_link[i+5]);
-
-        });
-    </script>
 </head>
 
 <body>
 <section class="hidden-xs">
     <ul class="cb-slideshow">
-    <li><img class="li_img1"></li>
-    <li><img class="li_img2"></li>
-    <li><img class="li_img3"></li>
-    <li><img class="li_img4"></li>
-    <li><img class="li_img5"></li>
-    <li><img class="li_img6"></li>
+        <li><span class="li_img1"></span></li>
+        <li><span class="li_img2"></span></li>
+        <li><span class="li_img3"></span></li>
+        <li><span class="li_img4"></span></li>
+        <li><span class="li_img5"></span></li>
+        <li><span class="li_img6"></span></li>
 </ul>
 </section>
+
+<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+<script src="../js/fade.js"></script>
+<!--canvas：<script type="text/javascript" src="https://beats0.github.io/www.mygalgame.com/js/myblog_bd=1.0.3.js"></script>-->
 </body>
 </html>
