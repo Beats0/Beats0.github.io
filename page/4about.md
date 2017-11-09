@@ -24,8 +24,7 @@ Acg爱好者
 ## 联系我
 
 * GitHub：[Beats0](https://github.com/Beats0)
-* QQ: 2047155291
-* email：2047155291@qq.com
+* Gmail：Beats01998@gmail.com
 * [Weibo](http://weibo.com/u/5848651877)微博不怎么上了，现在玩Twitter
 * [Twitter:@Beats0Ling](https://twitter.com/Beats0Ling)
 * [bilibili](https://space.bilibili.com/598848/#!/)
