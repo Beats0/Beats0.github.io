@@ -13,27 +13,20 @@
      * 内容JSON
      */
   var demoContent = [
-      {
-          demo_link: 'https://github.com/Beats0/Demo/blob/master/mygalgame/random/random.html',
-          img_link: 'https://raw.githubusercontent.com/Beats0/Demo/master/mygalgame/images/logo.png',
-          code_link: 'https://github.com/Beats0/Demo/blob/master/mygalgame/random/random.html',
-          title: '仿mygalgame网站界面的背景随机变换',
-          core_tech: 'JavaScript jQuery',
-          description: '仿mygalgame网站界面的背景随机变换，图片以数组形式传入url()值，使用js随机数,让两个随机数相加生成另一个随机数，使图片显示更加随机，重复性按照图片数量的增大而减小(重复性几率依然存在，重复性几率视情况而定'
-      },{
+  {
           demo_link: 'https://beats0.github.io/Demo/mygalgame',
           img_link: 'https://raw.githubusercontent.com/Beats0/Demo/master/mygalgame/images/logo.png',
           code_link: 'https://github.com/Beats0/Demo/tree/master/mygalgame',
-          title: '部分mygalgame网站界面',
+          title: '备份mygalgame网站界面',
           core_tech: 'Bootstrap JavaScript jQuery worldpress',
-          description: '下载mygalgame网站前端界面，网站的主题也做得非常好， 就当是网站的备份，原网站地址：www.mygalgame.com,GitHub备份网站地址访问:https://github.com/Beats0/www.mygalgame.com'
+          description: 'wget 命令下载mygalgame网站前端界面，网站的主题也做得非常好， 就当是网站的备份，原网站地址：www.mygalgame.com,GitHub备份网站地址访问:https://github.com/Beats0/www.mygalgame.com'
       },{
           demo_link: 'https://beats0.github.io/Demo/bilibili_2016',
           img_link: 'http://static.hdslb.com/live-static/live-index-v4/static/img/img.hinter.46822ec.jpg',
           code_link: 'https://github.com/Beats0/Demo/tree/master/bilibili_2016',
           title: 'bilibili2016的界面',
           core_tech: 'JavaScript',
-          description: '一直就觉得bilibili的主页面很有意思，于是对bilibili的代码进行了学习学习，最后在GitHub找到的2016版本的源文件。代码详情见 <a href ="https://github.com/Beats0/BILIBILI-2016-version">这里</a>。'
+          description: 'bilibili的主页，最后在GitHub找到的2016版本的源文件。代码详情见 <a href ="https://github.com/Beats0/BILIBILI-2016-version">这里</a>。'
       },{
           demo_link: 'https://beats0.github.io/Demo',
           img_link: 'https://camo.githubusercontent.com/5d417873a11d7175ec40fc3af3c6cb024a531dd7/68747470733a2f2f676574626f6f7473747261702e636f6d2f6173736574732f6272616e642f626f6f7473747261702d736f6c69642e737667',
