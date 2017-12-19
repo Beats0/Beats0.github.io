@@ -1,21 +1,14 @@
 .page[index] {
     a {
-        color: hotpink;
+        color: #4eabfdfa;
         transition: 0.3s ease;
         &:hover {
-            color: #ffffff;
+            color: #4c48df;
             animation: neon 0.5s ease-in-out infinite alternate;
             -webkit-animation: neon 0.5s ease-in-out infinite alternate;
         -moz-animation: neon 0.5s ease-in-out infinite alternate;
         }
-        @keyframes neon {
-            0% {
-                text-shadow: 0 0 8px #fff, 0 0 10px #fff, 0 0 12px #fff, 0 0 14px #ff00de, 0 0 16px #ff00de, 0 0 18px #ff00de, 0 0 20px #ff00de, 0 0 22px #ff00de;
-            }
-            100% {
-                text-shadow: 0 0 10px #fff, 0 0 18px #fff, 0 0 20px #fff, 0 0 22px #ff00de, 0 0 25px #ff00de, 0 0 28px #ff00de, 0 0 30px #ff00de, 0 0 35px #ff00de;
-            }
-        }
+
     }
     .left {
         >ul {
