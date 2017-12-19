@@ -13,13 +13,19 @@
      * 内容JSON
      */
   var demoContent = [
-  {
+      {demo_link: 'https://beats0.github.io/Demo/Sort/',
+          img_link: '',
+          code_link: 'https://github.com/twobin/twobinSort',
+          title: '常见排序算法（JS版）并记录耗时情况',
+          core_tech: 'avaScript 算法排序',
+          description: '常见排序算法（JS版） 包括： 内置排序 冒泡排序 选择排序 插入排序 希尔排序 快速排序（递归 & 堆栈） 归并排序 堆排序 以及分析每种排序算法的执行时间。'
+      }, {
           demo_link: 'https://beats0.github.io/Demo/mygalgame',
           img_link: 'https://raw.githubusercontent.com/Beats0/Demo/master/mygalgame/images/logo.png',
           code_link: 'https://github.com/Beats0/Demo/tree/master/mygalgame',
           title: '备份mygalgame网站界面',
           core_tech: 'Bootstrap JavaScript jQuery worldpress',
-          description: 'wget 命令下载mygalgame网站前端界面，网站的主题也做得非常好， 就当是网站的备份，原网站地址：www.mygalgame.com,GitHub备份网站地址访问:https://github.com/Beats0/www.mygalgame.com'
+          description: 'wget 命令下载mygalgame网站前端界面，原网站地址：www.mygalgame.com,GitHub备份网站地址访问:https://github.com/Beats0/www.mygalgame.com'
       },{
           demo_link: 'https://beats0.github.io/Demo/bilibili_2016',
           img_link: 'http://static.hdslb.com/live-static/live-index-v4/static/img/img.hinter.46822ec.jpg',
