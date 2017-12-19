@@ -159,38 +159,6 @@ css代码详见[/css/fade.css](https://github.com/Beats0/Beats0.github.io/blob/m
 :last-child       | 选取最后一个标签
 :nth-last-child(3)| 选取倒数第几个标签,3表示选取第3个
 
-
-
-*CanvasRenderingContext2D对象的方法*
-
-方法 | 描述 |
------|-----|
-arc() | 用一个中心点和半径，为一个画布的当前子路径添加一条弧线。
-arcTo() | 使用目标点和一个半径，为当前的子路径添加一条弧线。
-beginPath()           |        开始一个画布中的一条新路径（或者子路径的一个集合）。
-bezierCurveTo()       |        为当前的子路径添加一个三次贝塞尔曲线。
-clearRect()           |        在一个画布的一个矩形区域中清除掉像素。
-clip()                |       使用当前路径作为连续绘制操作的剪切区域。
-closePath()           |        如果当前子路径是打开的，就关闭它。
-createLinearGradient()|        返回代表线性颜色渐变的一个 CanvasGradient 对象。
-createPattern()       |        返回代表贴图图像的一个 CanvasPattern 对象。
-createRadialGradient()|        返回代表放射颜色渐变的一个 CanvasGradient 对象。
-drawImage()           |        绘制一幅图像。
-fill()                |        使用指定颜色、渐变或模式来绘制或填充当前路径的内部。
-fillRect()            |        绘制或填充一个矩形。
-lineTo()              |        为当前的子路径添加一条直线线段。
-moveTo()              |        设置当前位置并开始一条新的子路径。
-quadraticCurveTo()    |        为当前路径添加一条贝塞尔曲线。
-rect()                |        为当前路径添加一条矩形子路径。
-restore()             |        为画布重置为最近保存的图像状态。
-rotate()              |        旋转画布。
-save()                |        保存 CanvasRenderingContext2D 对象的属性、剪切区域和变换矩阵。
-scale()               |        标注画布的用户坐标系统。
-stroke()              |        沿着当前路径绘制或画一条直线。
-strokeRect()          |        绘制（但不填充）一个矩形。
-translate()           |        转换画布的用户坐标系统。
-
-
 ## 参考
 
 - [fade.css](https://github.com/Beats0/Beats0.github.io/blob/master/css/fade.css)
