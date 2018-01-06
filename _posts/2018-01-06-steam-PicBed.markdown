@@ -10,13 +10,20 @@ mathjax: true
 * content
 {:toc}
 
-<b>首先用Steam Screen shot Uploader GUI输出文件路径，然后再用Steam自带的Steam Screenshots Uploader批量上传图片，最后使用JavaScript跨域请求获得图片链接，注意：图片下载方面，只能使用Chrome浏览器，原因是因为只有Chrome浏览器可以实施[FileSystemAPI](https://developer.mozilla.org/zh-CN/docs/WebGuide/API/File_System/Introduction#%E9%99%90%E5%88%B6)。目前尚不存在专门用于文件/配额管理的浏览器用户界面。实测Firefox只能打印图片链接地址，但不能下载图片
+<b>为什么要使用steam云做图床呢?
+ - 国内的渣浪微博图床和七牛云都会对用户的图片进行检测限制，有些图片就会被和谐掉
+ - steam云有18G，图片基于[Akamai](https://baike.baidu.com/item/Akamai/10008179?fr=aladdin)的,这也意味着图片具有全球CDN加速服务
+ - 图片可以在个人资料的`Screenshot`选项中任意更改，便于管理
 
 
 
 
 
 
+
+
+
+首先用Steam Screen shot Uploader GUI输出文件路径，然后再用Steam自带的Steam Screenshots Uploader批量上传图片，最后使用JavaScript跨域请求获得图片链接，注意：图片下载方面，只能使用Chrome浏览器，原因是因为只有Chrome浏览器可以实施[FileSystemAPI](https://developer.mozilla.org/zh-CN/docs/WebGuide/API/File_System/Introduction#%E9%99%90%E5%88%B6)。目前尚不存在专门用于文件/配额管理的浏览器用户界面。实测Firefox只能打印图片链接地址，但不能下载图片
 
 ##### Downloads
 
