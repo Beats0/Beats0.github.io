@@ -9,21 +9,10 @@ author: Beats0
 * content
 {:toc}
 
-本文将介绍如何使用`百度统计`分析 ，并将访问数量展示在你的jekyll中。
+<b>本文将介绍如何使用`百度统计`分析 ，并将访问数量展示在你的jekyll中。
 
-## 先上百度统计的js代码
 
-```js
- <script>
-     var _hmt = _hmt || [];
-     (function() {
-         var hm = document.createElement("script");
-         hm.src = "https://hm.baidu.com/hm.js?2b2a338137de996cb2246d227d701736";
-         var s = document.getElementsByTagName("script")[0];
-         s.parentNode.insertBefore(hm, s);
-     })();
- </script>
-```
+
 
 
 

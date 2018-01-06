@@ -8,8 +8,8 @@ author: Beats0
 
 * content
 {:toc}
-#### *chapter.6 面向对象程序设计*
-#### *page：157-176*
+<b>*chapter.6 面向对象程序设计*<br>
+<b>*page：157-176*
 
 
 
