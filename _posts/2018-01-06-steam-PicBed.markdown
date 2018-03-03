@@ -2,7 +2,7 @@
 layout: post
 title:  "用steam做图床"
 categories: javascript
-tags: 图床 跨域请求
+tags: 图床 跨域请求 tool
 author: Beats0
 mathjax: true
 ---
