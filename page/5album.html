@@ -11,6 +11,9 @@ type: page
         margin-top: 0!important;
         height: 123%!important;
     }
+    #bgImg {
+        display: none;
+    }
     .back-to-top {
         display: none;
     }
@@ -32,21 +35,3 @@ type: page
 </style>
 <div id="app"></div>
 <script src="/dist/build.js"></script>
-<script>
-    (function () {
-        var backToTop = document.querySelector('#goTop')
-        window.addEventListener('scroll', function () {
-            var scrollTop = Math.max(document.documentElement.scrollTop, document.body.scrollTop)
-            if (scrollTop > 200) {
-                backToTop.style.display = "block"
-            } else {
-                backToTop.style.display = "none"
-            }
-        })
-        backToTop.addEventListener('click', function (e) {
-            console.log(1)
-            e.preventDefault()
-            window.scrollTo(0, 0)
-        })
-    }());
-</script>

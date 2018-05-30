@@ -27,20 +27,10 @@ html {
     height: 100%;
 }
 body {
-font-family: 'Helvetica Neue',Helvetica,Arial,'Microsoft YaHei',sans-serif;
+    font-family: 'Helvetica Neue',Helvetica,Arial,'Microsoft YaHei',sans-serif;
     color: #333;
     background: rgba(255, 0, 120, 0.10);
-    background-image: url(https://ws1.sinaimg.cn/large/006nOlwNgy1fkehkk8stnj31jk11t7cj.jpg);
     position: relative;
-    min-height: 100%;
-    padding-bottom: 190px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    word-wrap: break-word;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
 }
 a {
     text-decoration: none;

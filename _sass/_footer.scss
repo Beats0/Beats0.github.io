@@ -1,11 +1,10 @@
 .site-footer {
-    position: absolute;
+    position: relative;
+    margin-top: 20px;
     right: 0;
     bottom: 0;
     left: 0;
-
     text-align: center;
-    // margin-top: 50px;
     .wrapper {
         width: 1140px;
         margin: 0 auto;
@@ -23,7 +22,7 @@
                 color: #ccc;
                 transition: 0.3s ease;
                 &:hover {
-                    color: hotpink;
+                    color: white;;
                 }
                 i {
                     margin: 0 5px;
