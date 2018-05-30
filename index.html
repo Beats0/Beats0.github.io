@@ -1,25 +1,12 @@
 ---
 layout: default
 ---
-<section class="hidden-xs">
-    <ul class="cb-slideshow">
-        <li><span>苟利</span></li>
-        <li><span>国家</span></li>
-        <li><span>生死以</span></li>
-        <li><span>岂能</span></li>
-        <li><span>祸福</span></li>
-        <li><span>趋避之</span></li>
-        <li><span>蛤蛤蛤蛤</span></li>
-    </ul>
-</section>
 <div class="page clearfix" index>
     <div class="left">
-        <h1>Welcome to Beats0's Blog!</h1>
-        <small>努力自学中...评论请翻墙...</small>
-        <hr>
-        <ul>
+        <div style="width: 100%; min-height: 20px; color: #fff; text-align: center; font-size: 22px; cursor: pointer; font-style: normal; font-variant: normal; font-weight: bold; font-stretch: normal; font-family: 'Comic Sans MS';"><a href="/album/" style="color: white"> 念念碎 </a></div>
+        <div>
             {% for post in paginator.posts %}
-              <li>
+              <div class="item mybody">
                 <h2>
                   <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
                 </h2>
@@ -30,9 +17,6 @@ layout: default
                     <div class="label-card">
                         {% if post.author %}<i class="fa fa-user"></i>{{ post.author }}
                         {% endif %}
-                    </div>
-                    <div class="label-card">
-                        {% if page.meta %}<i class="fa fa-key"></i>{{ page.meta }}  {% endif %}
                     </div>
 
                     <div class="label-card">
@@ -49,15 +33,10 @@ layout: default
                 <div class="read-all">
                     <a  href="{{ post.url | prepend: site.baseurl }}"><i class="fa fa-newspaper-o"></i>Read All</a>
                 </div>
-                <hr>
-              </li>
+              </div>
             {% endfor %}
-        </ul>
-
-
-
-        <!-- Pagination links -->
-        <div class="pagination">
+        </div>
+        <div class="pagination mybody">
           {% if paginator.previous_page %}
             <a href="/index.html" class="previous"><i class="fa fa-angle-double-left"></i></a>
             <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="previous"><i class="fa fa-angle-left"></i></a>
@@ -183,6 +162,5 @@ layout: default
         </div>
     </div>
 </div>
-<script>console.log(" %c 23333", "color:hotpink")</script>
 <!-- <script src="{{ "/js/scroll.min.js " | prepend: site.baseurl }}" charset="utf-8"></script> -->
 <!-- <script src="{{ "/js/pageContent.js " | prepend: site.baseurl }}" charset="utf-8"></script> -->

@@ -52,15 +52,5 @@ $(document).ready(function(){
     post_thumbnail_link[49] = "006nOlwNgy1flml5x2z54j315o0rc7go.jpg";
     post_thumbnail_link[50] = "006nOlwNgy1flml5wrgcdj315o0ngdl3.jpg";
     i = Math.floor(Math.random()*(Math.floor(post_thumbnail_link.length)));
-    j = Math.floor(Math.random()*(Math.floor(post_thumbnail_link.length)));
-    k = Math.floor(Math.random()*(Math.floor(post_thumbnail_link.length)));
-    l = Math.floor(Math.random()*(Math.floor(post_thumbnail_link.length)));
-    m = Math.floor(Math.random()*(Math.floor(post_thumbnail_link.length)));
-    n = Math.floor(Math.random()*(Math.floor(post_thumbnail_link.length)));
     $(".li_img1").css('backgroundImage','url(https://ws1.sinaimg.cn/large/' + post_thumbnail_link[i] + ')');
-    $(".li_img2").css('backgroundImage','url(https://ws1.sinaimg.cn/large/' + post_thumbnail_link[j] + ')');
-    $(".li_img3").css('backgroundImage','url(https://ws1.sinaimg.cn/large/' + post_thumbnail_link[k] + ')');
-    $(".li_img4").css('backgroundImage','url(https://ws1.sinaimg.cn/large/' + post_thumbnail_link[l] + ')');
-    $(".li_img5").css('backgroundImage','url(https://ws1.sinaimg.cn/large/' + post_thumbnail_link[m] + ')');
-    $(".li_img6").css('backgroundImage','url(https://ws1.sinaimg.cn/large/' + post_thumbnail_link[n] + ')');
 });

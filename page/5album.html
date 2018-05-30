@@ -6,253 +6,47 @@ icon: file-image-o
 type: page
 ---
 
+<style>
+    #app {
+        margin-top: 0!important;
+        height: 123%!important;
+    }
+    .back-to-top {
+        display: none;
+    }
 
-<link rel="stylesheet" href="/css/bootstrap_v1.css">
-<link rel="stylesheet" href="/css/aos.css">
+    #goTop {
+        position: fixed;
+        right: 20px;
+        bottom: 30px;
+        opacity: 0.85;
+        z-index: 100;
+        cursor: pointer;
+        transition: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
 
-<link rel="stylesheet" href="https://beats0.github.io/www.mygalgame.com/css/style.css">
-<link rel="stylesheet" href="/css/myblog.css">
-<script src="https://cdn.bootcss.com/aplayer/1.6.0/APlayer.min.js"></script>
-
-
-<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
-<link rel="stylesheet" href="../css/fade.css">
+    #goTop:hover {
+        opacity: 1;
+        transition: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+</style>
+<div id="app"></div>
+<script src="/dist/build.js"></script>
 <script>
-
+    (function () {
+        var backToTop = document.querySelector('#goTop')
+        window.addEventListener('scroll', function () {
+            var scrollTop = Math.max(document.documentElement.scrollTop, document.body.scrollTop)
+            if (scrollTop > 200) {
+                backToTop.style.display = "block"
+            } else {
+                backToTop.style.display = "none"
+            }
+        })
+        backToTop.addEventListener('click', function (e) {
+            console.log(1)
+            e.preventDefault()
+            window.scrollTo(0, 0)
+        })
+    }());
 </script>
-
-
-<section class="hidden-xs">
-    <ul class="cb-slideshow">
-        <li><span class="li_img1"></span></li>
-        <li><span class="li_img2"></span></li>
-        <li><span class="li_img3"></span></li>
-        <li><span class="li_img4"></span></li>
-        <li><span class="li_img5"></span></li>
-        <li><span class="li_img6"></span></li>
-    </ul>
-</section>
-<div class="grid">
-    <div id="zan-bodyer">
-        <div class="container">
-            <div class="row">
-
-
-                <div id="mainstay" class="col-md-4">
-                    <div class="well mybody2">
-                        <h1 class="text-center album_all">Album</h1>
-                        <div class="login-panel text-center"><a href="https://github.com/Beats0"> <img
-                                src="https://avatars0.githubusercontent.com/u/29087203?s=460&v=4"
-                                width="60" height="60" alt="Beats0"
-                                class="avatar avatar-60 wp-user-avatar wp-user-avatar-60 alignnone photo"> </a>
-                            <p class="user-name">Beats0</p>
-                        </div>
-                        <p class="contact text-center"><a href="https://github.com/Beats0" title="GitHub"><i
-                                class="fa fa-github" aria-hidden="true"></i></a>
-                            <a href="mailto:2047155291@qq.com" title="Email"><i class="fa fa-envelope-o"
-                                                                                aria-hidden="true"></i></a>
-                            <a href="http://weibo.com/Beats0" title="Weibo"><i class="fa fa-weibo"
-                                                                               aria-hidden="true"></i></a>
-                            <a href="https://www.zhihu.com/people/beats0" title="Zhihu"><i
-                                    class="iconfont icon-daoruzhihu"></i></a>
-                            <a href="https://twitter.com/Beats0Ling" title="Twitter"><i class="fa fa-twitter"
-                                                                                        aria-hidden="true"></i></a>
-                            <a href="https://steamcommunity.com/id/2047155291" title="steam"><i class="fa fa-steam"
-                                                                                                aria-hidden="true"></i></a>
-                            <a href="https://space.bilibili.com/598848/#!/" title="bilibili"><i
-                                    class="fa fa-play-circle" aria-hidden="true"></i></a>
-                            <a href="https://yande.re/user/show/273112" title="yande.re"><i class="fa fa-y-combinator"
-                                                                                            aria-hidden="true"></i></a>
-                            <a href="http://music.163.com/#/user/home?id=566378573" title="music.163"><i
-                                    class="fa fa-music" aria-hidden="true"></i></a>
-                            <a href="http://www.xiami.com/u/45818524?spm=a1z1s.6928797.1561534497.1.LvT529"
-                               title="music.xiami"><i
-                                    class="fa fa-music" aria-hidden="true"></i></a>
-                        </p>
-                    </div>
-
-
-                </div>
-
-
-                <div class="col-md-8">
-                    <div class="well mybody2" id="topic_show">
-                        <button type="button" class="close" id="close" data-dismiss="alert">×</button>
-                        <b><font color="#FF0000">My Music Album and Photo Album<br>
-                            <br>Xiami Music:&nbsp;&nbsp;
-                            http://www.xiami.com/u/45818524?spm=a1z1s.6928797.1561534497.2.VUtVze
-                            <br>Music.163:&nbsp;&nbsp; http://music.163.com/#/user/home?id=566378573
-                            <br>
-                            <br>╮(￣▽￣)╭</font></b><br>
-                    </div>
-                    <script type="text/javascript">
-                        var close = document.getElementById('close');
-                        var topic_show = document.getElementById('topic_show');
-                        close.onclick = function () {
-                            topic_show.style.display = "none";
-                        }
-                    </script>
-                    <!--https://avatars0.githubusercontent.com/u/29087203?s=460&v=4-->
-
-                    <div id="article-list">
-
-                        <div class="article well clearfix mybody3 aos-init aos-animate" aos="flip-up"><i
-                                class="fa fa-bookmark article-stick visible-md visible-lg"></i>
-                            <div class="data-article hidden-xs"><span class="month">10月</span> <span
-                                    class="day">20</span>
-                            </div> <!-- 大型设备文章属性 -->
-                            <section class="hidden-xs">
-                                <div class="title-article"><h1><a
-                                        href="http://www.xiami.com/album/537161?spm=a1z1s.3061781.6856533.7.JPbanO"
-                                        target="_blank"><span class="animated_h1">ODDS&ENDS</span><br><span
-                                        class="label label-info" style="font-size:13px;"></span></a>
-                                </h1></div>
-                                <div class="tag-article">
-                                    <span class="label label-zan"><i class="fa fa-music"></i> <a
-                                            href="http://www.xiami.com/artist/PhC926f8?spm=a1z1s.6659513.6856581.1.nMooTX"
-                                            rel="tag">ryo</a></span></div>
-                                <div class="alert alert-zan mybody3">
-                                    <p style="text-align: center;"><a
-                                            href="http://www.xiami.com/album/537161?spm=a1z1s.3061781.6856533.7.JPbanO"
-                                            target="_blank">
-                                    </a></p>
-                                    <div class="ih-item square effect bottom_to_top"><a
-                                            href="http://www.xiami.com/album/537161?spm=a1z1s.3061781.6856533.7.JPbanO"
-                                            target="_blank">
-                                        <div class="img"><img
-                                                src="https://ws1.sinaimg.cn/large/006nOlwNgy1fkp5wvf251j30dw0dsgnh.jpg"
-                                                alt="ODDS&ENDS"></div>
-                                        <div class="info">
-                                            <p>《ODDS&ENDS/Sky of Beginning》<br>
-                                                SEGAの大人気ゲームソフト『初音ミク-Project
-                                                DIVA-』シリーズのテーマソングを『こっち向いてBaby』『積乱雲グラフィティ』に引き続き、今年8月30日に発売されるシリーズ最新作『初音ミク-Project
-                                                DIVA-f』オープニングテーマも、ryo（supercell）が手掛けます！<br>
-                                                <br>
-                                                演唱者：初音ミク<br>
-                                                作词：Ryo<br>
-                                                编曲：Ryo<br>
-                                                发行时间：2012年08月29日<br></p>
-                                        </div>
-
-                                    </a></div>
-
-
-                                    <div class="play">
-                                        <div id="aplayer0" class="aplayer" style="margin-bottom: 20px;">
-                                            <script>
-                                                new APlayer({
-                                                    element: document.getElementById("aplayer0"),
-                                                    narrow: false,
-                                                    autoplay: false,
-                                                    showlrc: 0,
-                                                    music: {
-                                                        title: "ODDS&ENDS",
-                                                        author: "ryo;初音ミク",
-                                                        url: "https://beats0.github.io/data/music/ODDS&ENDS.mp3",
-                                                        pic: "https://ws1.sinaimg.cn/large/006nOlwNgy1fkp5wvf251j30dw0dsgnh.jpg"
-                                                    }
-                                                });
-                                            </script>
-                                        </div>
-                                    </div>
-
-
-                                    <p></p></div>
-                            </section> <!-- 大型设备文章属性结束 --> <!-- 小型设备文章属性 -->
-                            <section class="visible-xs">
-                                <div class="title-article">
-                                    <center><h4><a
-                                            href="http://www.xiami.com/album/537161?spm=a1z1s.3061781.6856533.7.JPbanO"><span
-                                            class="animated_h1">ODDS&ENDS</span><br><span class="label label-info"
-                                                                                          style="font-size:11px;"></span></a>
-                                    </h4></center>
-                                </div>
-                                <p>
-                                </p>
-                                <center><i class="fa fa-calendar"></i> 2017-10-20</center>
-                                <p></p>
-                                <p>
-                                </p>
-                                <center><i class="fa fa-music"></i> <a
-                                        href="http://www.xiami.com/artist/PhC926f8?spm=a1z1s.6659513.6856581.1.nMooTX"
-                                        rel="tag">ryo</a></center>
-                                <p></p>
-                                <div class="alert alert-zan mybody3"><p style="text-align: center;"><a
-                                        href="http://www.xiami.com/album/537161?spm=a1z1s.3061781.6856533.7.JPbanO"
-                                        title="ODDS&ENDS"><img
-                                        src="https://ws1.sinaimg.cn/large/006nOlwNgy1fkp5wvf251j30dw0dsgnh.jpg"
-                                        alt="ODDS&ENDS"></a>
-                                </p></div>
-                                <div class="alert alert-zan">
-                                    《ODDS&ENDS/Sky of Beginning》<br>
-                                    SEGAの大人気ゲームソフト『初音ミク-Project
-                                    DIVA-』シリーズのテーマソングを『こっち向いてBaby』『積乱雲グラフィティ』に引き続き、今年8月30日に発売されるシリーズ最新作『初音ミク-Project
-                                    DIVA-f』オープニングテーマも、ryo（supercell）が手掛けます！<br>
-                                    <br>
-                                    演唱者：初音ミク<br>
-                                    作词：Ryo<br>
-                                    编曲：Ryo<br>
-                                    发行时间：2012年08月29日<br>
-                                </div>
-
-                                <div class="play">
-                                    <div id="aplayer2" class="aplayer" style="margin-bottom: 20px;">
-                                        <script>
-                                            new APlayer({
-                                                element: document.getElementById("aplayer2"),
-                                                narrow: false,
-                                                autoplay: false,
-                                                showlrc: 0,
-                                                music: {
-                                                    title: "ODDS&ENDS",
-                                                    author: "ryo;初音ミク",
-                                                    url: "https://beats0.github.io/data/music/ODDS&ENDS.mp3",
-                                                    pic: "https://ws1.sinaimg.cn/large/006nOlwNgy1fkp5wvf251j30dw0dsgnh.jpg"
-                                                }
-                                            });
-                                        </script>
-                                    </div>
-                                </div>
-                                <a class="btn btn-danger pull-right read-more btn-block"
-                                   href="http://www.xiami.com/album/537161?spm=a1z1s.3061781.6856533.7.JPbanO"
-                                   title="详细阅读 ODDS&ENDS">more</a>
-                            </section>
-                            <!-- 小型设备文章属性结束 -->
-                        </div>
-
-
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
-    </div>
-
-</div>
-
-
-<script type="text/javascript" src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
-<!-- 包含了所有编译插件 -->
-<script type="text/javascript" src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-<script type="text/javascript" src="../js/fade.js"></script>
-<script type="text/javascript" src="../js/aos.js"></script>
-<script>
-    AOS.init({
-        easing: 'ease-out-back',
-        duration: 1000
-    });
-</script>
-<script>
-    hljs.initHighlightingOnLoad();
-
-    $('.hero__scroll').on('click', function (e) {
-        $('html, body').animate({
-            scrollTop: $(window).height()
-        }, 1200);
-    });
-</script>
-
-
-{% include comments.html %}
