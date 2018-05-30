@@ -4,7 +4,8 @@ services:
     command: jekyll serve
     image: jekyll/jekyll:latest
     volumes:
-      - D:\docker-img\je\file:/srv/jekyll
+      # your path here
+      - D:\Sites\Beats0.github.io-master\Beats0.github.io:/srv/jekyll
     ports:
       - 4000:4000
       - 35729:35729
