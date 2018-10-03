@@ -12,7 +12,7 @@ mathjax: true
 
 <b>为什么要使用steam云做图床呢?
  - 国内的渣浪微博图床和七牛云都会对用户的图片进行检测限制，有些图片就会被和谐掉
- - steam云有18G，图片基于[Akamai](https://baike.baidu.com/item/Akamai/10008179?fr=aladdin)的,这也意味着图片具有全球CDN加速服务
+ - steam云有18G，使用Akamai CDN
  - 图片可以在个人资料的`Screenshot`选项中任意更改，便于管理
 
 
@@ -22,7 +22,7 @@ mathjax: true
 
 
 
-上传工具有两个，一个是[SteaScree](https://github.com/Foyl/SteaScree)，另一个[SteamScreenshotUploaderGUI](https://github.com/0x6FA3D0/SteamScreenshotUploaderGUI)，两者相比较，我更喜欢SteaScree，应为这个工具可以批量输出，缺点就是可能会不稳定，SteamScreenshotUploaderGUI只能上传单个，但稳定性好
+上传工具有两个，一个是[SteaScree](https://github.com/Foyl/SteaScree)，另一个[SteamScreenshotUploaderGUI](https://github.com/0x6FA3D0/SteamScreenshotUploaderGUI)，两者相比较，我更喜欢SteaScree，因为这个工具可以批量输出，缺点就是可能会不稳定，SteamScreenshotUploaderGUI只能上传单个，但稳定性好
 
 首先用工具输出文件路径，然后再用Steam自带的Steam Screenshots Uploader批量上传图片，最后使用JavaScript跨域请求获得图片链接，注意：图片下载方面，只能使用Chrome浏览器，原因是因为只有Chrome浏览器可以实施[FileSystemAPI](https://developer.mozilla.org/zh-CN/docs/WebGuide/API/File_System/Introduction#%E9%99%90%E5%88%B6)。目前尚不存在专门用于文件/配额管理的浏览器用户界面。实测Firefox只能打印图片链接地址，但不能下载图片
 
@@ -68,7 +68,7 @@ English: https://steamcommunity.com/sharedfiles/filedetails/?id=878337526
 
 在浏览器里打开自己的steam个人资料选择Screenshot截图页面(建议以网格视图查看)
 
-输入以下JavaScript，这个函数回调图片链接地址，可以将链接地址打印或转为图片下载(只有chrome能下载图片，下载图片默认关闭)
+输入以下JavaScript，返回图片链接地址，可以将链接地址打印或转为图片下载(只有chrome能下载图片，下载图片默认关闭)
 ```js
 downloadURI = function (uri, name) {
     var link = document.createElement("a");
