@@ -20,19 +20,20 @@ type: page
 
 
 ## Skill
-| NAME | USE |
-|:----:|:------:|
+NAME | USE |
+----|------|
 Vue     | 90%
-React   | 70%
-React Native| 50%
+React   | 80%
+React Native| 90%
 Express | 85%
 Koa     | 85%
 Typescript| 70%
 Mysql   | 85%
 MongoDB | 70%
 Redis   | 70%
+nginx   | 60%
+node    | 60%
 
-......
 
 
 
