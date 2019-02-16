@@ -10,7 +10,7 @@ mathjax: true
 * content
 {:toc}
 
-<b>为什么要使用steam云做图床呢?
+<b>使用steam云做图床呢?
  - 国内的渣浪微博图床和七牛云都会对用户的图片进行检测限制，有些图片就会被和谐掉
  - steam云有18G，使用Akamai CDN
  - 图片可以在个人资料的`Screenshot`选项中任意更改，便于管理
@@ -22,19 +22,28 @@ mathjax: true
 
 
 
-上传工具有两个，一个是[SteaScree](https://github.com/Foyl/SteaScree)，另一个[SteamScreenshotUploaderGUI](https://github.com/0x6FA3D0/SteamScreenshotUploaderGUI)，两者相比较，我更喜欢SteaScree，因为这个工具可以批量输出，缺点就是可能会不稳定，SteamScreenshotUploaderGUI只能上传单个，但稳定性好
+上传工具有两个，一个是[SteaScree](https://github.com/Foyl/SteaScree)，另一个[SteamScreenshotUploaderGUI](https://github.com/0x6FA3D0/SteamScreenshotUploaderGUI)，两者相比较，SteaScree可以批量输出，缺点就是不稳定, 虽然可以生成图片, 但可能不会写入screenshots.vdf c从而导致上传失败, SteamScreenshotUploaderGUI只能上传单个，但稳定性好, 一般都能成功
 
-首先用工具输出文件路径，然后再用Steam自带的Steam Screenshots Uploader批量上传图片，最后使用JavaScript跨域请求获得图片链接，注意：图片下载方面，只能使用Chrome浏览器，原因是因为只有Chrome浏览器可以实施[FileSystemAPI](https://developer.mozilla.org/zh-CN/docs/WebGuide/API/File_System/Introduction#%E9%99%90%E5%88%B6)。目前尚不存在专门用于文件/配额管理的浏览器用户界面。实测Firefox只能打印图片链接地址，但不能下载图片
+首先注意文件备份, steam 截图文件夹为 ` steam/userdata/xxxxxxx/760 `, 用工具输出文件路径, 然后再用Steam自带的Steam Screenshots Uploader批量上传图片，最后使用JavaScript请求获得图片链接并打印
 
-#### SteaScree
+#### 使用SteamScreenshotUploaderGUI
+
+[SteamScreenshotUploaderGUI](https://github.com/0x6FA3D0/SteamScreenshotUploaderGUI)
+
+[SteamGroup](https://steamcommunity.com/sharedfiles/filedetails/?id=878337526)
+
+路径1：https://drive.google.com/file/d/0BwSFV9LmCqmiVjRGTWluOXdIbmc/view
+
+路径2：百度云[http://pan.baidu.com/s/1hrYCQRq](http://pan.baidu.com/s/1hrYCQRq)
+
+
+#### 使用SteaScree
 
 [SteaScree](https://github.com/Foyl/SteaScree)
 
 路径: http://www.softpedia.com/get/Internet/Other-Internet-Related/SteaScree.shtml
 
 [steamgroup](https://steamcommunity.com/groups/steascree)
-
-##### 使用
 
 选择steam默认安装路径，选择gameID(可以手动输入ID，前提是你确实是有这款游戏)，
 
@@ -46,18 +55,6 @@ mathjax: true
 
 重新打开steam，选择游戏的截图库，然后使用steam的官方截图上传器上传即可，注意选择图片的私密性
 
-#### SteamScreenshotUploaderGUI
-
-[SteamScreenshotUploaderGUI](https://github.com/0x6FA3D0/SteamScreenshotUploaderGUI)
-
-[SteamGroup](https://steamcommunity.com/sharedfiles/filedetails/?id=878337526)
-
-路径1：https://drive.google.com/file/d/0BwSFV9LmCqmiVjRGTWluOXdIbmc/view
-
-路径2：百度云[http://pan.baidu.com/s/1hrYCQRq](http://pan.baidu.com/s/1hrYCQRq)
-
-##### 使用
-
 English: https://steamcommunity.com/sharedfiles/filedetails/?id=878337526
 
 中文: https://steamcommunity.com/sharedfiles/filedetails/?l=spanish&id=891916460
@@ -68,7 +65,10 @@ English: https://steamcommunity.com/sharedfiles/filedetails/?id=878337526
 
 在浏览器里打开自己的steam个人资料选择Screenshot截图页面(建议以网格视图查看)
 
-输入以下JavaScript，返回图片链接地址，可以将链接地址打印或转为图片下载(只有chrome能下载图片，下载图片默认关闭)
+输入以下JavaScript脚本，返回图片链接地址，可以将链接地址打印或~~~转为图片下载(只有chrome能下载图片，下载图片默认关闭)~~~
+
+> 更新：自chrome 66起, 如果文件跨域, 浏览器会发出警告, 以下脚本将失效, 即不能再进行下载
+
 ```js
 downloadURI = function (uri, name) {
     var link = document.createElement("a");
