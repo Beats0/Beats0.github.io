@@ -10,10 +10,10 @@ mathjax: true
 * content
 {:toc}
 
-<b>使用steam云做图床呢?
+<b>使用steam云做图床
  - 国内的渣浪微博图床和七牛云都会对用户的图片进行检测限制，有些图片就会被和谐掉
  - steam云有18G，使用Akamai CDN
- - 图片可以在个人资料的`Screenshot`选项中任意更改，便于管理
+ - 图片可以在个人资料的`Screenshot`选项中更改私密性，是否删除，便于管理
 
 
 
