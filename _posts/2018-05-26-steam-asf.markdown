@@ -12,7 +12,7 @@ mathjax: true
 
 steam ASF配置<br> 
 只不过是为了信仰罢了
-![](https://ws1.sinaimg.cn/large/006nOlwNgy1frolehg151j30lv07tdjc.jpg)
+![](https://ws1.sinaimg.cn/large/006nOlwNly1g08oixk4dcj30ma0elq6g.jpg)
 
 
 
@@ -23,8 +23,7 @@ steam ASF配置<br>
 
 
 
-
-#### 使用
+#### 使用ArchiSteamFarm 搭建
 环境: Ubuntu 16.04
 
 #### 工具
@@ -55,12 +54,12 @@ dotnet --version
 ```
 
 
-确保服务器上的steam有没有被墙,如果没有可以直接跳过，如果被墙请使用ascf(临时性修复Steam社区的小工具)
+~~~确保服务器上的steam有没有被墙,如果没有可以直接跳过，如果被墙请使用ascf(临时性修复Steam社区的小工具)~~~
+
+> 由于steam的墙又加高了, 所以ascf失效了, 所以只能自己搭梯子了emmm
 
 
-> [ascf](https://steamcn.com/t339641-1-1)
-
-详情见 https://steamcn.com/t339641-1-1
+关于 [ascf](https://steamcn.com/t339641-1-1)
 
 ```sh
 chmod +x ./ascf
@@ -71,14 +70,12 @@ sudo ./ascf
 ```
 
 
-> [ArchiSteamFarm](https://github.com/JustArchi/ArchiSteamFarm/releases)
-
-下载:
+下载: [ArchiSteamFarm](https://github.com/JustArchiNET/ArchiSteamFarm/releases)
 
 注意要使用稳定版本，不要使用开发版本,点击原文的please download latest stable release instead链接即可
 
 ```sh
-wget https://github.com/JustArchi/ArchiSteamFarm/releases/download/3.1.3.3/ASF-linux-x64.zip
+wget https://github.com/JustArchiNET/ArchiSteamFarm/releases/download/4.0.0.5/ASF-linux-x64.zip
 
 unzip ASF-linux-x64.zip -d ASF/     //解压文件到ASF文件夹  
 cd ASF/  
@@ -116,6 +113,11 @@ sudo ./ArchiSteamFarm
 
 
 
+
+#### 使用ArchiSteamFarm-Docker搭建
+具体自己看wiki
+
+[ArchiSteamFarm-wiki-Docker](https://github.com/JustArchiNET/ArchiSteamFarm/wiki/Docker)
 
 ## 参考
 
