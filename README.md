@@ -20,9 +20,10 @@ docker-compose up
 使用bash
 
 ```bash
-docker run --name jekyllserver -v D:/Sites/Beats0.github.io-master/Beats0.github.io:/srv/jekyll -p 4000:4000 -it jekyll/jekyll:builder bash
-
-docker serve
+λ docker run --name jekyllserver -v D:/Sites/Beats0.github.io-master/Beats0.github.io:/srv/jekyll -p 4000:4000 -it jekyll/jekyll:builder bash
+```
+```
+bash-5.0# jekyll serve --watch
 ```
 
 访问 http://localhost:4000 即可
