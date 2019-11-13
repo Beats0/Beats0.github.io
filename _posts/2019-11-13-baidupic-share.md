@@ -13,16 +13,17 @@ mathjax: true
 
 
 
+
 #### 百度网盘批量分享
 
 
 最近网盘被人举报了，分享的链接全部凉了，一个一个的点击分享太麻烦了，就写了一个批量分享脚本。
 
-访问百度网盘文件列表，发现官方分享时是不能自定义密码的，于是在 [greasyfork](https://greasyfork.org/zh-CN) 用了可自定义分享密码的工具 [网盘助手](https://greasyfork.org/zh-CN/scripts/378301-%E7%BD%91%E7%9B%98%E5%8A%A9%E6%89%8B)。
+访问百度网盘文件列表，官方分享时是不能自定义密码的，在 [greasyfork](https://greasyfork.org/zh-CN) 使用可自定义分享密码的工具 [网盘助手](https://greasyfork.org/zh-CN/scripts/378301-%E7%BD%91%E7%9B%98%E5%8A%A9%E6%89%8B)。
 
-安装好脚本后创建一个分享链接，然后分析了一下分享api
 
-获取用户文件列表api
+
+首先获取用户文件列表api，拿到文件的 `fs_id`
 
 > [get] /api/list
 
@@ -59,6 +60,9 @@ list: [
   }
 ]
 ```
+
+安装好脚本后随便创建一个分享链接，分析分享api
+
 
 分享api
 
