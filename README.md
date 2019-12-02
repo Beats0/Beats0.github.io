@@ -26,11 +26,4 @@ docker-compose up
 bash-5.0# jekyll serve
 ```
 
-删除以前被占用的容器
-
-```bash
-docker ps -a
-docker rm [CONTAINER ID]
-```
-
 访问 http://localhost:4000 即可
