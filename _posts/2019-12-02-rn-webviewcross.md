@@ -1,17 +1,12 @@
 ---
 layout: post
-title:  "react native webview封装"
-categories: react-native
-tags: react-native
-author: Beats0
+title: "react native webview封装"
+author: "Beats0"
+header-img: "//steamuserimages-a.akamaihd.net/ugc/853856987591518892/8F5992A5ED9FA2822FBF74C409E5D4F9927B4DFC/"
+catalog:    true
+tags:
+  - react-native
 ---
-
-* content
-{:toc}
-
-
-
-
 
 ### react native webview封装
 
@@ -267,7 +262,7 @@ methods: {
 ```
 
 
-#### 优缺点
+### 优缺点
 
 1. 少部分react-native页面使用html编写，然后用webview加载，这样开发速率是写原生页面的好几倍，且页面可热更新
 2. react-native-webview仍然存在大量无法修复的bug, 例如部分老机型无法使用flex布局，部分样式无法兼容，导致页面混乱。样式只能慢慢调试

@@ -1,16 +1,13 @@
 ---
 layout: post
-title:  "Flutter Windows/Mac 环境搭建"
-categories: flutter
-tags: flutter
-author: Beats0
+title: "Flutter Windows/Mac 环境搭建"
+subtitle: "Flutter Windows/Mac development environment"
+author: "Beats0"
+header-img: "//steamuserimages-a.akamaihd.net/ugc/853856987591354129/0FEFBDB8B2D0F759625559B1D55979662A8CF28D/"
+catalog:    true
+tags:
+  - flutter
 ---
-
-* content
-{:toc}
-
-
-
 
 
 ### windows安装flutter
@@ -238,6 +235,6 @@ Doctor summary (to see all details, run flutter doctor -v):
 ```
 
 
-## 参考
+### 参考
 
  - [简书flutter环境配置详解MAC版](https://www.jianshu.com/p/b50a92afbef1)

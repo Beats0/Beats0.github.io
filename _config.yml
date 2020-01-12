@@ -1,57 +1,109 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
 # Site settings
-title: Beats0
-brief-intro: Front-end Dev Engineer
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://beats0.github.io/" # the base hostname & protocol for your site
+title: Beats0的日常
+SEOTitle:  Beats0的日常
+header-img: img/home-bg.jpg
+email: huxpro@gmail.com
+description: "Beats0的日常"
+keyword: "Beats0, Blog, 博客, Web, JavaScript, 前端"
+url: "https://beats0.github.io"              # your host, for absolute URL
+baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
-permalink: /:year/:month/:day/:title/
+# Publish posts or collection documents with a future date.
+future: true
 
-# other links
-twitter_username: Beats0Ling
-facebook_username:
-github_username:  Beats0
-email: Beats01998@Gamil.com
-weibo_username:
-zhihu_username:
-linkedIn_username:
-dribbble_username:
+# SNS settings
+RSS: false
+#weibo_username:     Beats0
+#zhihu_username:     Beats0
+github_username:    Beats0
+twitter_username:   Beats0Ling
+#facebook_username:  Beats0
 
-description_footer: Coding For Fun ～❤
 
-# comments
-disqus_shortname: https-beats0-github-io
 
-# statistic analysis 统计代码
-# 百度统计 id，将统计代码替换为自己的百度统计id，即
-# hm.src = "//hm.baidu.com/hm.js?xxxxxxxxxxxx";
-# xxxxx字符串
-baidu_tongji_id: 7b9b38f6b09ac2bb2e479623ae4fe86e
-#google_analytics_id: UA-72449510-4
 
 # Build settings
-markdown: kramdown
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+highlighter: rouge
+permalink: pretty
+paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+# If you have timezone issue (e.g. #68) in China, uncomment to use this:
+#timezone: CN  
 
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
 
-# port
-# port: 1234
 
-# url
-category_dir: category/
-tag_dir: tag/
-
-# excerpt
-excerpt_separator: "\n\n\n\n"
-
-# paginate
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+# make sure you have this gem installed
+# `$ gem install jekyll-paginate`
 plugins: [jekyll-paginate]
-paginate: 8
+
+
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+  syntax_highlighter_opts:
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+
+
+# Disqus settings
+disqus_username: beats0
+
+# Netease settings
+netease_comment: false
+
+
+
+# Analytics settings
+# Baidu Analytics 
+ba_track_id: 7b9b38f6b09ac2bb2e479623ae4fe86e
+
+# Google Analytics
+# ga_track_id: 'GTM-5BVTQLK'            # Format: UA-xxxxxx-xx
+# ga_domain: huangxuan.me
+
+
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "写代码 | 吃吃吃 _(:зゝ∠)"
+sidebar-avatar: /img/avatar-beats0.jpg     # use absolute URL, seeing it's used in both `/` and `/about/`
+
+
+
+# Featured Tags
+featured-tags: true                     # whether or not using Feature-Tags
+featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+
+
+
+# Progressive Web Apps
+chrome-tab-theme-color: "#000000"
+service-worker: true
+
+
+
+# MathJax rendering for layout:page (e.g. post preview)
+page-mathjax: false
+
+
+
+# Friends
+# friends: [
+#     {
+#         title: "Jancgk",
+#         href: "https://blog.mynoee.com"
+#     }
+# ]

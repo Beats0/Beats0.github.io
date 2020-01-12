@@ -1,32 +1,26 @@
 ---
 layout: post
-title:  "steam ASF配置"
-categories: steam
-tags: steam
-author: Beats0
-mathjax: true
+title: "steam ASF配置"
+subtitle: "Steam ASF config"
+author: "Beats0"
+header-img: "//steamuserimages-a.akamaihd.net/ugc/853856987591354129/0FEFBDB8B2D0F759625559B1D55979662A8CF28D/"
+catalog:    true
+tags:
+  - steam
 ---
 
-* content
-{:toc}
+### steam ASF配置
 
-steam ASF配置<br> 
 只不过是为了信仰罢了
+
 ![](https://steamuserimages-a.akamaihd.net/ugc/775101441385714112/4A2E4975B88F5E5881171272EEA6F693AC78031C/)
 
 
-
-
-
-
-
-
-
-
-#### 使用ArchiSteamFarm 搭建
+### 使用ArchiSteamFarm 搭建
 环境: Ubuntu 16.04
 
-#### 工具
+
+### 工具
 
 > [.NET Core](https://github.com/dotnet/core/tree/master/release-notes/2.1)
 
@@ -111,15 +105,12 @@ sudo ./ArchiSteamFarm
 // 执行成功后按Ctrl + A + D 挂起
 ```
 
-
-
-
-#### 使用ArchiSteamFarm-Docker搭建
+### 使用ArchiSteamFarm-Docker搭建
 具体自己看wiki
 
 [ArchiSteamFarm-wiki-Docker](https://github.com/JustArchiNET/ArchiSteamFarm/wiki/Docker)
 
-## 参考
+### 参考
 
  - [ArchiSteamFarm](https://github.com/JustArchi/ArchiSteamFarm)
  - [ArchiSteamFarm wiki](https://github.com/JustArchi/ArchiSteamFarm/wiki) 

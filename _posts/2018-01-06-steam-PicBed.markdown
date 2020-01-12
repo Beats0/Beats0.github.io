@@ -1,32 +1,26 @@
 ---
 layout: post
-title:  "用steam做图床"
-categories: javascript
-tags: 图床 跨域请求 tool
-author: Beats0
-mathjax: true
+title: "用steam做图床"
+subtitle: "Use Steam PicBed"
+author: "Beats0"
+header-img: "//steamuserimages-a.akamaihd.net/ugc/853856987591241284/4CE27900D244562BFA6802F8DFAA28B78B771373/"
+catalog:    true
+tags:
+  - 图床
 ---
 
-* content
-{:toc}
 
-<b>使用steam云做图床
+### 使用steam云做图床
  - 国内的渣浪微博图床和七牛云都会对用户的图片进行检测限制，有些图片就会被和谐掉
  - steam云有18G，使用Akamai CDN
  - 图片可以在个人资料的`Screenshot`选项中更改私密性，是否删除，便于管理
-
-
-
-
-
-
 
 
 上传工具有两个，一个是[SteaScree](https://github.com/Foyl/SteaScree)，另一个[SteamScreenshotUploaderGUI](https://github.com/0x6FA3D0/SteamScreenshotUploaderGUI)，两者相比较，SteaScree可以批量输出，缺点就是不稳定, 虽然可以生成图片, 但可能不会写入screenshots.vdf c从而导致上传失败, SteamScreenshotUploaderGUI只能上传单个，但稳定性好, 一般都能成功
 
 首先注意文件备份, steam 截图文件夹为 ` steam/userdata/xxxxxxx/760 `, 用工具输出文件路径, 然后再用Steam自带的Steam Screenshots Uploader批量上传图片，最后使用JavaScript请求获得图片链接并打印
 
-#### 使用SteamScreenshotUploaderGUI
+### 使用SteamScreenshotUploaderGUI
 
 [SteamScreenshotUploaderGUI](https://github.com/0x6FA3D0/SteamScreenshotUploaderGUI)
 
@@ -37,7 +31,7 @@ mathjax: true
 路径2：百度云[http://pan.baidu.com/s/1hrYCQRq](http://pan.baidu.com/s/1hrYCQRq)
 
 
-#### 使用SteaScree
+### 使用SteaScree
 
 [SteaScree](https://github.com/Foyl/SteaScree)
 
@@ -61,7 +55,7 @@ English: https://steamcommunity.com/sharedfiles/filedetails/?id=878337526
 
 上传过程和SteamGroup的上传过程差不多
 
-#### 获取图片地址
+### 获取图片地址
 
 在浏览器里打开自己的steam个人资料选择Screenshot截图页面(建议以网格视图查看)
 
@@ -132,7 +126,7 @@ for (var i = 0; i < urls.length; ++i) {
 }
 ```
 
-## 参考
+### 参考
 
  - [SteaScree](https://github.com/Foyl/SteaScree)
  - [0x6FA3D0/SteamScreenshotUploaderGUI Source Code](https://github.com/0x6FA3D0/SteamScreenshotUploaderGUI)

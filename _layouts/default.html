@@ -1,26 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 {% include head.html %}
 
-<body>
-<div id="bgImg" style="position: fixed; width: 100%; height: 100%; top: 0; left: 0; z-index: -1000; background-size: cover; background-image: url(&quot;https://ws1.sinaimg.cn/large/006nOlwNgy1fp0v3noihrj337b29eu0x.jpg&quot;); background-position: 50% 50%; background-repeat: no-repeat; background-color: rgb(255, 255, 255);"></div>
-{% include header.html %}
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
 
-{{ content }}
+    {% include nav.html %}
 
-{% include footer.html %}
-{% include backToTop.html %}
-<script src="{{ " /js/main.js " | prepend: site.baseurl }}" charset="utf-8"></script>
-<script src="{{ " /js/smooth-scroll.min.js " | prepend: site.baseurl }}" charset="utf-8"></script>
-<script src="/js/bgImg.js"></script>
-<script type="text/javascript">
-    smoothScroll.init({
-        speed: 500,
-        easing: 'easeInOutCubic',
-        offset: 20,
-    });
-</script>
+    {{ content }}
+
+    {% include footer.html %}
+
+
+<!-- Image to hack wechat -->
+<img src="/img/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
 </body>
 
 </html>

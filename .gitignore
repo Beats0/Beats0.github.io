@@ -1,6 +1,11 @@
 _site
-.sass-cache
-.jekyll-metadata
+_posts/_draft
+_posts/_archive
+_archive
+node_modules
 .vscode
-.idea
+*.log
+*.sh
 .DS_Store
+*/.DS_Store
+*/*/.DS_Store
