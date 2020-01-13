@@ -1,24 +1,24 @@
 ### About
 
-写代码, 吃吃吃 _(:зゝ∠)_ 
+Coding, Eating _(:зゝ∠)_ 
 
 
-Front End Developer(reac, vue)
+Front End Developer(react, vue)
 
-node、go Back End Developer
+Node、go Back End Developer
 
 
-React-native android，ios Cross plantform Developer ~~(Whitch wrote over 180 pages by single)~~
+React-native android，ios Cross plantform Developer (Whitch wrote over 180 pages by single)
 
-Flutter ~~(Interest)~~
+Flutter (Interest)
 
-Node, python Spider Developer
+Node, python Spider and scripter
 
-Linux lover ~~(docker noob)~~
+Linux lover (Docker noob)
 
-Drawing noob ~~(playing)~~
+Drawing noob (Drawing)
 
-Otaku  ~~(Watching)~~
+Otaku (Watching)
 
 
 

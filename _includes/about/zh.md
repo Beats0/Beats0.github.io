@@ -2,21 +2,21 @@
 
 写代码, 吃吃吃 _(:зゝ∠)_ 
 
-主前端开发(reac, vue)
+主前端开发(react, vue)
 
-node、go 后端开发
+Node、go 后端开发
 
-React-native android，ios 跨平台应用开发 ~~(单人负责过超过180个页面的大型应用开发)~~
+React-native android，ios 跨平台应用开发 (单人负责过超过180个页面的大型应用开发)
 
-Flutter ~~(兴趣使然)~~
+Flutter (兴趣使然)
 
-Node, python爬虫开发
+Node, python 爬虫, 脚本开发
 
-Linux一般玩家 ~~(docker菜鸡)~~
+Linux一般玩家 (Docker菜鸡)
 
-画画萌新 ~~(努力画画ing)~~
+画画萌新 (努力画画ing)
 
-宅  ~~(疯狂补番ing)~~
+宅 (补番ing)
 
 
 
