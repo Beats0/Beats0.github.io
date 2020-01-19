@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "百度网盘批量分享"
-subtitle: "baidu net disk fast share script"
+subtitle: "Baidu net disk fast share script"
 author: "Beats0"
 header-img: "//steamuserimages-a.akamaihd.net/ugc/853856987599999163/C69392A1CD4BE3BD1159849FA2DFA027F5267FED/"
 catalog:    true

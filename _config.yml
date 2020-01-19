@@ -2,10 +2,10 @@
 title: Beats0的日常
 SEOTitle:  Beats0的日常
 header-img: img/home-bg.jpg
-email: huxpro@gmail.com
+email: Beats01998@gmail.com
 description: "Beats0的日常"
 keyword: "Beats0, Blog, 博客, Web, JavaScript, 前端"
-url: "https://beats0.github.io"              # your host, for absolute URL
+url: "https://beats0.github.io/"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 # Publish posts or collection documents with a future date.
