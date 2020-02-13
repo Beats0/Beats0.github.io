@@ -3,12 +3,11 @@
 Coding, Eating _(:зゝ∠)_ 
 
 
-Front End Developer(react, vue)
+Front-End Developer(React, Vue)
 
-Node、go Back End Developer
+Node、Go Back-End Developer
 
-
-React-native android，ios Cross plantform Developer (Whitch wrote over 180 pages by single)
+React-Native Android, IOS Cross plantform Developer (Whitch wrote over 180 pages by single)
 
 Flutter (Interest)
 
@@ -33,8 +32,8 @@ Typescript| 70%
 Mysql   | 85%
 MongoDB | 80%
 Redis   | 70%
-node    | 70%
-go      | 65%
+Node    | 70%
+Go      | 65%
 Flutter | 40%
 
 

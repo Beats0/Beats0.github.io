@@ -2,11 +2,11 @@
 
 写代码, 吃吃吃 _(:зゝ∠)_ 
 
-主前端开发(react, vue)
+主前端开发(React, Vue)
 
-Node、go 后端开发
+Node、Go 后端开发
 
-React-native android，ios 跨平台应用开发 (单人负责过超过180个页面的大型应用开发)
+React-Native Android，IOS 跨平台应用开发 (单人负责过超过180个页面的大型应用开发)
 
 Flutter (兴趣使然)
 
@@ -31,8 +31,8 @@ Typescript| 70%
 Mysql   | 85%
 MongoDB | 80%
 Redis   | 70%
-node    | 70%
-go      | 65%
+Node    | 70%
+Go      | 65%
 Flutter | 40%
 
 
