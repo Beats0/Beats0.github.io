@@ -29,7 +29,8 @@
 
 // disqus_thread
 window.addEventListener('error', event => {
-    if (event.target && event.target.src === 'http://https-beats0-github-io.disqus.com/embed.js') {
+    const targetReg = /https-beats0-github-io.disqus.com\/embed.js/
+    if (event.target && targetReg.test(event.target.src)) {
         document.querySelector('#disqus_thread').innerHTML = '<div id="dsqjs"><section><div id="dsqjs-msg">评论加载失败，需要正确的上网姿势 _(:зゝ∠)，是否 <a id="dsqjs-reload-dsqjs" class="dsqjs-msg-btn" onclick="window.location.reload()">重载</a> ？</div></section><footer><p class="dsqjs-footer">Powered by <a class="dsqjs-disqus-logo" href="https://disqus.com" rel="nofollow noopener noreferrer" target="_blank">Disqus</a></p></footer></div>'
     }
   }, true);
