@@ -8,6 +8,30 @@
 
 // SW Version Upgrade Ref: <https://youtu.be/Gb9uI67tqV0>
 
+function isUnRegistePage() {
+  const {pathname} = window.location
+  const whiteLists = [
+    /\/www.mygalgame.com/,
+  ]
+  let isunRegiste = whiteLists.some((item) => item.test(pathname) )
+  if(isunRegiste) {
+    handleUnRegistration()
+  }
+  return isunRegiste
+}
+
+function handleUnRegistration() {
+  console.log('Service Worker unregistration');
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.getRegistrations().then(function(registrations) {
+    for(let registration of registrations) {
+            registration.unregister()
+    }}).catch(function(err) {
+        console.log('Service Worker registration failed: ', err);
+    });
+}
+}
+
 function handleRegistration(registration){
   console.log('Service Worker Registered. ', registration)
   /**
@@ -31,7 +55,7 @@ function handleRegistration(registration){
   }
 }
 
-if(navigator.serviceWorker){
+if(navigator.serviceWorker && !isUnRegistePage()){
   // For security reasons, a service worker can only control the pages
   // that are in the same directory level or below it. That's why we put sw.js at ROOT level.
   navigator.serviceWorker

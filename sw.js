@@ -36,6 +36,14 @@ const HOSTNAME_WHITELIST = [
 ]
 const DEPRECATED_CACHES = ['precache-v1', 'runtime', 'main-precache-v1', 'main-runtime']
 
+const checkIsUnRegistePage = () => {
+  const {pathname} = window.location
+  const whiteLists = [
+    /\/www.mygalgame.com/,
+  ]
+  let isunRegiste = whiteLists.some((item) => item.test(pathname) )
+  return isunRegiste
+}
 
 // The Util Function to hack URLs of intercepted requests
 const getCacheBustingUrl = (req) => {
@@ -116,6 +124,7 @@ self.addEventListener('install', e => {
  *  waitUntil(): activating ====> activated
  */
 self.addEventListener('activate', event => {
+  if(checkIsUnRegistePage()) return
   // delete old deprecated caches.
   caches.keys().then(cacheNames => Promise.all(
     cacheNames
