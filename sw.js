@@ -36,12 +36,11 @@ const HOSTNAME_WHITELIST = [
 ]
 const DEPRECATED_CACHES = ['precache-v1', 'runtime', 'main-precache-v1', 'main-runtime']
 
-const checkIsUnRegistePage = () => {
-  const {pathname} = window.location
+const checkIsUnRegistePage = (url) => {
   const whiteLists = [
-    /\/www.mygalgame.com/,
+    /\/www.mygalgame.com(.*)\.html(\/*)$/,
   ]
-  let isunRegiste = whiteLists.some((item) => item.test(pathname) )
+  let isunRegiste = whiteLists.some((item) => item.test(url) )
   return isunRegiste
 }
 
@@ -124,7 +123,7 @@ self.addEventListener('install', e => {
  *  waitUntil(): activating ====> activated
  */
 self.addEventListener('activate', event => {
-  if(checkIsUnRegistePage()) return
+  if(checkIsUnRegistePage(event.request.url)) return
   // delete old deprecated caches.
   caches.keys().then(cacheNames => Promise.all(
     cacheNames
@@ -174,6 +173,12 @@ self.addEventListener('fetch', event => {
   //console.log(`fetch ${event.request.url}`)
   //console.log(` - type: ${event.request.type}; destination: ${event.request.destination}`)
   //console.log(` - mode: ${event.request.mode}, accept: ${event.request.headers.get('accept')}`)
+  
+  // skip unRegistePage
+  if(checkIsUnRegistePage(event.request.url)) {
+    console.log('service worker skip unRegistePage', event.request.url)
+    return
+  }
 
   // Skip some of cross-origin requests, like those for Google Analytics.
   if (HOSTNAME_WHITELIST.indexOf(new URL(event.request.url).hostname) > -1) {

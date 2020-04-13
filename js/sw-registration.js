@@ -11,7 +11,7 @@
 function isUnRegistePage() {
   const {pathname} = window.location
   const whiteLists = [
-    /\/www.mygalgame.com/,
+    /\/www.mygalgame.com(.*)\.html(\/*)$/,
   ]
   let isunRegiste = whiteLists.some((item) => item.test(pathname) )
   if(isunRegiste) {
