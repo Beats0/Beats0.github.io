@@ -1,7 +1,7 @@
 version: "3"
 services:
   site:
-    command: jekyll serve
+    command: jekyll serve --watch --drafts
     image: jekyll/jekyll:latest
     volumes:
       # your path here
@@ -11,5 +11,5 @@ services:
       - 35729:35729
       - 3000:3000
       -   80:4000
-    environment:
-      - jekyll build
+    # environment:
+    #   - jekyll build

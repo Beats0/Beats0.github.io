@@ -20,9 +20,12 @@ const PRECACHE_LIST = [
   "./js/hux-blog.min.js",
   "./js/snackbar.js",
   "./js/smoothScroll.min.js",
+  "./js/live2d.min.js",
+  "./js/message.js",
   "./img/icon_wechat.png",
   "./img/avatar-beats0.jpg",
   "./img/404-bg.jpg",
+  "./css/live2d.css",
   "./css/hux-blog.min.css",
   "./css/bootstrap.min.css",
   // "//cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"
@@ -32,7 +35,8 @@ const PRECACHE_LIST = [
 ]
 const HOSTNAME_WHITELIST = [
   self.location.hostname,
-  "cdnjs.cloudflare.com"
+  "cdnjs.cloudflare.com",
+  "cdn.jsdelivr.net",
 ]
 const DEPRECATED_CACHES = ['precache-v1', 'runtime', 'main-precache-v1', 'main-runtime']
 
