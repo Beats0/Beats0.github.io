@@ -1,7 +1,7 @@
 # Site settings
 title: Beats0的日常
 SEOTitle:  Beats0的日常
-header-img: img/home-bg.jpg
+header-img: //cdn.jsdelivr.net/gh/Beats0/beats0.github.io@master/img/home-bg.jpg
 email: Beats01998@gmail.com
 description: "Beats0的日常"
 keyword: "Beats0, Blog, 博客, Web, JavaScript, 前端"

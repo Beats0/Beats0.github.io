@@ -2,6 +2,8 @@
 
 Beats0's Jekyll theme blog on GitHub<br>
 
+[![](https://data.jsdelivr.com/v1/package/gh/Beats0/beats0.github.io/badge)](https://www.jsdelivr.com/package/gh/Beats0/beats0.github.io)
+
 Original Jekyll theme by [Huxpro](https://github.com/Huxpro/huxpro.github.io).<br>
 
 [Jekyll Docker Image](https://hub.docker.com/r/jekyll/jekyll/)

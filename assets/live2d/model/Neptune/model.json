@@ -1,0 +1,57 @@
+{
+    "posted": "Dreamer-Paul",
+    "model": "model.moc",
+    "textures": [
+        "textures/00.png",
+        "textures/01.png",
+        "textures/02.png"
+    ],
+    "pose": "../general/pose.json",
+    "physics": "physics.json",
+    "layout": {
+        "center_x": 0,
+        "center_y": -0.1,
+        "width": 2
+    },
+    "hit_areas_custom": {
+        "head_x": [-0.35, 0.6],
+        "head_y": [0.19, -0.2],
+        "body_x": [-0.3, -0.25],
+        "body_y": [0.3, -0.9]
+    },
+    "hit_areas": [
+        {"name": "head", "id": "D_REF.PT_HEAD"},
+        {"name": "body", "id": "D_REF.PT_BUST"},
+        {"name": "belly", "id": "D_REF.PT_BELL"}
+    ],
+    "expressions": [
+        {"name": "normal", "file": "../general/expressions/normal.json"},
+        {"name": "happy", "file": "../general/expressions/happy.json"},
+        {"name": "unhappy", "file": "../general/expressions/unhappy.json"},
+        {"name": "kira", "file": "../general/expressions/kira.json"},
+        {"name": "deformed", "file": "../general/expressions/deformed.json"},
+        {"name": "enjoy", "file": "../general/expressions/enjoy.json"}
+    ],
+    "motions": {
+        "idle": [
+            {"file": "../general/motions/idle_00.mtn", "fade_in": 2000, "fade_out": 2000},
+            {"file": "../general/motions/idle_01.mtn", "fade_in": 2000, "fade_out": 2000},
+            {"file": "../general/motions/idle_02.mtn", "fade_in": 2000, "fade_out": 2000}
+        ],
+        "alt_idle": [
+            {"file": "../general/motions/idle_00.mtn", "fade_in": 2000, "fade_out": 2000},
+            {"file": "../general/motions/idle_01.mtn", "fade_in": 2000, "fade_out": 2000},
+            {"file": "../general/motions/idle_02.mtn", "fade_in": 2000, "fade_out": 2000},
+            {"file": "../general/motions/shake.mtn"}
+        ],
+        "tap_body": [
+            {"dialogue": 11, "sound": "../general/sounds/001.ogg", "file": "../general/motions/nep_touch_head_1.mtn"}, 
+            {"dialogue": 13, "sound": "../general/sounds/013.ogg", "file": "../general/motions/nep_touch_belly_1.mtn"},
+            {"dialogue": 90, "sound": "../general/sounds/101.ogg", "file": "../general/motions/nep_slide_head_2.mtn"}, 
+            {"dialogue": 93, "sound": "../general/sounds/007.ogg", "file": "../general/motions/nep_touch_boobs_1.mtn"},
+            {"dialogue": 94, "sound": "../general/sounds/014.ogg", "file": "../general/motions/nep_touch_belly_2.mtn"},
+            {"file": "../general/motions/refuse.mtn"},
+            {"file": "../general/motions/tilt_head.mtn"}
+        ]
+    }
+}

@@ -1,5 +1,7 @@
-var message_Path = 'https://api.bairuo.top/live2d/live2d/'
-var home_Path = 'https://api.bairuo.top/live2d/'
+// var home_Path = 'http://localhost:4000/assets/live2d'
+const home_Path = 'https://cdn.jsdelivr.net/gh/Beats0/beats0.github.io@master/assets/live2d'
+const LIVE2D_MODELNAME = 'LIVE2D_MODELNAME'
+let live2d_ModelName = localStorage.getItem(LIVE2D_MODELNAME) || 'Neptune'
 
 function renderTip(template, context) {
     var tokenReg = /(\\)?\{([^\{\}\\]+)(\\)?\}/g;
@@ -30,7 +32,7 @@ $(document).on('copy', function (){
 function initTips(){
     $.ajax({
         cache: true,
-        url: `${message_Path}message.json`,
+        url: `${home_Path}/message.json`,
         dataType: "json",
         success: function (result){
             $.each(result.mouseover, function (index, tips){
@@ -105,15 +107,22 @@ function hideMessage(timeout){
 }
 
 function initLive2d(){
+    $('.change-button').fadeOut(0).on('click', () => {
+        live2d_ModelName = live2d_ModelName === 'Neptune' ? 'Nepmaid' : 'Neptune'
+        localStorage.setItem(LIVE2D_MODELNAME, live2d_ModelName)
+        loadlive2d("live2d", `${home_Path}/model/${live2d_ModelName}/model.json`);
+    })
     $('.hide-button').fadeOut(0).on('click', () => {
         $('#landlord').css('display', 'none')
     })
     $('#landlord').hover(() => {
+        $('.change-button').fadeIn(600)
         $('.hide-button').fadeIn(600)
     }, () => {
+        $('.change-button').fadeOut(600)
         $('.hide-button').fadeOut(600)
     })
 }
 initLive2d();
 
-loadlive2d("live2d", "https://api.bairuo.top/live2d/live2d/model/Neptune/model.json");
+loadlive2d("live2d", `${home_Path}/model/${live2d_ModelName}/model.json`);

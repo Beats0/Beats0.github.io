@@ -89,5 +89,8 @@ jQuery(document).ready(function($) {
                     $catalog.removeClass('fixed')
                 }
             });
-    }
+    };
+    document.querySelectorAll('.post-container img').forEach(el => {
+        el.setAttribute('data-action', 'zoom')
+    })
 });

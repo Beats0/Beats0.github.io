@@ -5,7 +5,7 @@
     bottom: 0;
     width: 280px;
     height: 250px;
-    z-index: 10000;
+    z-index: 99;
     font-size: 0;
     transition: all .3s ease-in-out;
 }
@@ -38,12 +38,12 @@
     animation-iteration-count: infinite;
     animation-name: shake;
     animation-timing-function: ease-in-out;
-color: #ff8686;
+    color: #ff8686;
 }
 
-.hide-button {
+.hide-button, .change-button {
     position: absolute;
-    top: 10px;
+    top: 50px;
     right: 0;
     /* bottom: 30px; */
     display: none;
@@ -60,7 +60,11 @@ color: #ff8686;
     cursor: pointer;
 }
 
-.hide-button:hover {
+.change-button {
+    top: 10px;
+}
+
+.hide-button:hover, .change-button:hover {
     border: 1px solid #f4a7b9;
     background: #f4f6f8;
 }
