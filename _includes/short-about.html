@@ -4,7 +4,7 @@
   <div class="short-about">
     {% if site.sidebar-avatar %}
     <a target="_blank" href="https://github.com/{{ site.github_username }}">
-      <img src="{{site.sidebar-avatar}}" />
+      <img src="{{ site.sidebar-avatar | prepend: site.cdnPrefix }}" />
     </a>
     {% endif %}
     {% if site.sidebar-about-description %}
