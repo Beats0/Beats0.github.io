@@ -1,4 +1,3 @@
-<!-- Footer -->
 <footer>
     <div class="container">
         <div class="row">
@@ -9,7 +8,7 @@
                 <p class="copyright text-muted">
                     Copyright &copy; {{ site.title }} 2018 - {{ site.time | date: '%Y' }}
                     <br>
-                    Powered by <a href="https://github.com/huxpro/huxpro.github.io/" target="_blank">Hux Blog</a> | <a href="https://github.com/Beats0"  target="_blank">Beats0</a>
+                    Powered by <a href="https://github.com/huxpro/huxpro.github.io/" target="_blank">Hux Blog</a> & <a href="https://github.com/Beats0"  target="_blank">Beats0</a>
                 </p>
             </div>
         </div>
@@ -23,25 +22,25 @@
 </footer>
 
 <!-- jQuery -->
-<script src="{{ "/js/jquery.min.js " | prepend: site.baseurl }}"></script>
+<script src="{{ "/js/jquery.min.js " | prepend: site.cdnPrefix }}"></script>
 
 <!-- Bootstrap Core JavaScript -->
 <!-- Currently, only navbar scroll-down effect at desktop still depends on this -->
-<script src="{{ "/js/bootstrap.min.js " | prepend: site.baseurl }}"></script>
+<script src="{{ "/js/bootstrap.min.js " | prepend: site.cdnPrefix }}"></script>
 <!-- zoom-zoom-vanilla -->
-<script src="{{ "/js/zoom-vanilla.min.js " | prepend: site.baseurl }}"></script>
+<script src="{{ "/js/zoom-vanilla.min.js " | prepend: site.cdnPrefix }}"></script>
 <!-- live2d -->
-<script src="{{ "/js/live2d.min.js" | prepend: site.baseurl }}"></script>
-<script src="{{ "/js/message.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/js/live2d.min.js" | prepend: site.cdnPrefix }}"></script>
+<script src="{{ "/js/message.js" | prepend: site.cdnPrefix }}"></script>
 
 <!-- Custom Theme JavaScript -->
-<script src="{{ "/js/hux-blog.min.js " | prepend: site.baseurl }}"></script>
+<script src="{{ "/js/hux-blog.min.js " | prepend: site.cdnPrefix }}"></script>
 
 <!-- Service Worker -->
 {% if site.service-worker %}
-<script src="{{ "/js/snackbar.js " | prepend: site.baseurl }}"></script>
-<script src="{{ "/js/smoothScroll.min.js " | prepend: site.baseurl }}"></script>
-<script src="{{ "/js/sw-registration.js " | prepend: site.baseurl }}"></script>
+<script src="{{ "/js/snackbar.js " | prepend: site.cdnPrefix }}"></script>
+<script src="{{ "/js/smoothScroll.min.js " | prepend: site.cdnPrefix }}"></script>
+<script src="{{ "/js/sw-registration.js " | prepend: site.cdnPrefix }}"></script>
 {% endif %}
 
 <!-- async load function -->
@@ -80,7 +79,7 @@
 {% if page.title == 'Archive' %}
 <!-- jquery.tagcloud.js -->
 <script>
-    async('{{ "/js/jquery.tagcloud.js" | prepend: site.baseurl }}',function(){
+    async('{{ "/js/jquery.tagcloud.js" | prepend: site.cdnPrefix }}',function(){
         $.fn.tagcloud.defaults = {
             //size: {start: 1, end: 1, unit: 'em'},
             color: {start: '#bbbbee', end: '#2f93b4'},
@@ -88,7 +87,7 @@
         $('#tag_cloud a').tagcloud();
     })
 </script>
-<script src='{{ "/js/archive.js " | prepend: site.baseurl }}'></script>
+<script src='{{ "/js/archive.js " | prepend: site.cdnPrefix }}'></script>
 {% endif %}
 
 <!--fastClick.js -->
@@ -180,7 +179,7 @@
      * Doc: https://github.com/davist11/jQuery-One-Page-Nav
      * Fork by Hux to support padding
      */
-    async("{{ '/js/jquery.nav.js' | prepend: site.baseurl }}", function () {
+    async("{{ '/js/jquery.nav.js' | prepend: site.cdnPrefix }}", function () {
         $('.catalog-body').onePageNav({
             currentClass: "active",
             changeHash: !1,

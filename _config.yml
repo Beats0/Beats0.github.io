@@ -7,6 +7,7 @@ description: "Beats0的日常"
 keyword: "Beats0, Blog, 博客, Web, JavaScript, 前端"
 url: "https://beats0.github.io/"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
+cdnPrefix: "https://cdn.jsdelivr.net/gh/Beats0/beats0.github.io@master"
 
 # Publish posts or collection documents with a future date.
 future: true
