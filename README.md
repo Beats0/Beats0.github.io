@@ -1,4 +1,4 @@
-### Blog：[https://Beats0.github.io](https://Beats0.github.io)
+### Blog：[myNovel.life](myNovel.life)
 
 Beats0's Jekyll theme blog on GitHub<br>
 
