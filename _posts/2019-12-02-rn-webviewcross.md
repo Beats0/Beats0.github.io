@@ -252,11 +252,11 @@ mounted() {
     onMessage: this._onMessage
   }
   const event = new Event('WebViewBridge')
-  window.dispatchEvent('event')
+  window.dispatchEvent(event)
 },
 methods: {
   _onMessage(data) {
-    window.alert(JSON.stringfy(data))
+    window.alert(JSON.stringify(data))
   }
 }
 ```
@@ -269,3 +269,6 @@ methods: {
 3. 注入消息api不稳定，对于过长message json数据, webview ios端进行postMessage时可能会报错
 4. 老版本webview6.0以下不支持cookie和storage, 当退出应用时, webview数据将会被清空, 新本7.0以上webview已修复，待验证
 5. 不支持cors跨域类请求，不支持白名单唤醒，否则直接报错，这两个bug直到7.0都还未能修复
+
+### 相关
+ - [Issues: webview cannot receive message from RN](https://github.com/react-native-community/react-native-webview/issues/307)
