@@ -1,4 +1,4 @@
-### Blog：[myNovel.life](myNovel.life)
+### Blog：[myNovel.life](https://mynovel.life/)
 
 Beats0's Jekyll theme blog on GitHub<br>
 
