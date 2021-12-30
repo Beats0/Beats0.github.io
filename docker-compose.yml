@@ -5,7 +5,7 @@ services:
     image: jekyll/jekyll:latest
     volumes:
       # your path here
-      - D:\Sites\Beats0.github.io-master\Beats0.github.io:/srv/jekyll
+      - D:\site\github\Beats0.github.io:/srv/jekyll
     ports:
       - 4000:4000
       - 35729:35729

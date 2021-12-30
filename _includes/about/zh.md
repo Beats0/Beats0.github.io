@@ -6,7 +6,9 @@
 
 Node、Go 后端开发
 
-React-Native Android，IOS 跨平台应用开发 (单人负责过超过180个页面的大型应用开发)
+React-Native Android，IOS 跨平台应用开发
+
+Python 菜鸡
 
 Flutter (兴趣使然)
 
@@ -28,11 +30,12 @@ Vue     | 90%
 React   | 80%
 React Native| 80%
 Typescript| 70%
-Mysql   | 85%
-MongoDB | 80%
-Redis   | 70%
 Node    | 70%
-Go      | 65%
+MongoDB | 70%
+Mysql   | 60%
+Redis   | 50%
+Python  | 50%
+Python  | 50%
 Flutter | 40%
 
 
