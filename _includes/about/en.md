@@ -4,15 +4,13 @@ Coding, Eating _(:зゝ∠)_
 
 Front-End Developer(React, Vue)
 
-Node、Go Back-End Developer
+Node、GoLang Back-End Developer
 
 React-Native Android, IOS Cross plantform Developer
 
 Python noob
 
 Flutter (Interest)
-
-Node, python Spider and scripter
 
 Linux lover (Docker noob)
 
@@ -34,7 +32,6 @@ Node    | 70%
 MongoDB | 70%
 Mysql   | 60%
 Redis   | 50%
-Python  | 50%
 Python  | 50%
 Flutter | 40%
 

@@ -12,8 +12,6 @@ Python 菜鸡
 
 Flutter (兴趣使然)
 
-Node, python 爬虫, 脚本开发
-
 Linux一般玩家 (Docker菜鸡)
 
 画画萌新 (努力画画ing)
@@ -34,7 +32,6 @@ Node    | 70%
 MongoDB | 70%
 Mysql   | 60%
 Redis   | 50%
-Python  | 50%
 Python  | 50%
 Flutter | 40%
 
