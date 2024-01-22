@@ -6,18 +6,11 @@ Front-End Developer(React, Vue)
 
 Node、GoLang Back-End Developer
 
-React-Native Android, IOS Cross plantform Developer
+React-Native Cross plantform Developer
 
 Python noob
 
-Flutter (Interest)
-
-Linux lover (Docker noob)
-
-Drawing noob (Drawing)
-
-Otaku (Watching)
-
+ACGFan
 
 
 ### Skill
@@ -41,5 +34,5 @@ Flutter | 40%
 * [GitHub](https://github.com/Beats0)
 * [Twitter](https://twitter.com/Beats0Ling)
 * [Bangumi](https://bangumi.tv/user/beats0)
-* [bilibili](https://space.bilibili.com/598848)
+* [bilibili](https://space.bilibili.com/10022183)
 * [Gmail](mailto:Beats01998@gmail.com)

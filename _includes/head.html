@@ -6,7 +6,7 @@
     <meta name="description" content="{{ site.description }}">
     <meta name="keywords"  content="{{ site.keyword }}">
     <meta name="theme-color" content="{{ site.chrome-tab-theme-color }}">
-    
+
     <!-- Open Graph -->
     <meta property="og:title" content="{% if page.title %}{{ page.title }} - {{ site.SEOTitle }}{% else %}{{ site.SEOTitle }}{% endif %}">
     {% case page.layout %}
@@ -29,7 +29,7 @@
     <meta property="og:image" content="{{ site.url }}{{ site.sidebar-avatar }}">
     <meta property="og:url" content="{{ site.url }}{{ page.url }}">
     <meta property="og:site_name" content="{{ site.SEOTitle }}">
-    
+
     <title>{% if page.title %}{{ page.title }} - {{ site.SEOTitle }}{% else %}{{ site.SEOTitle }}{% endif %}</title>
 
     <!-- Web App Manifest -->
@@ -37,7 +37,7 @@
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="{{ site.baseurl }}/img/favicon.ico">
-    
+
     <!-- Canonical URL -->
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
@@ -46,8 +46,7 @@
     <!-- live2d CSS -->
     <link rel="stylesheet" href="{{ "/css/live2d.css" | prepend: site.cdnPrefix }}">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{ "/css/hux-blog.min.css" | prepend: site.cdnPrefix }}">
-
+    <link rel="stylesheet" href="{{ "/css/hux-blog.css" | prepend: site.cdnPrefix }}">
     <!-- Custom Fonts -->
     <link href="//cdn.jsdelivr.net/npm/font-awesome@4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 

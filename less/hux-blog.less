@@ -693,16 +693,19 @@ samp {
 }
 
 .caption {
+  color: #999;
   text-align: center;
   font-size: 14px;
-  padding: 10px;
+  padding: 10px 0;
   font-style: italic;
   margin: 0;
   display: block;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
 }
-
+.caption.captionLeft {
+  text-align: left;
+}
 footer {
   font-size: 20px;
   padding: 50px 0 65px;
@@ -1029,15 +1032,14 @@ img::-moz-selection {
   display: block;
   max-width: 100%;
   height: auto;
-  margin: 1.5em auto 1.6em auto;
-}
-.post-container img.imgCover {
-  margin-left: 1.5em;
 }
 
 @media (max-width: 767px) {
   .post-container img.imgCover {
       margin: 0 auto;
+  }
+  .caption.captionLeft {
+    text-align: center;
   }
 }
 

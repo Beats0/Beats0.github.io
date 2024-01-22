@@ -17,7 +17,7 @@ const PRECACHE_LIST = [
   "./offline.html",
   "//cdn.jsdelivr.net/gh/Beats0/beats0.github.io@master/js/jquery.min.js",
   "//cdn.jsdelivr.net/gh/Beats0/beats0.github.io@master/js/bootstrap.min.js",
-  "//cdn.jsdelivr.net/gh/Beats0/beats0.github.io@master/js/zoom-vanilla.min.js",
+  "//cdn.jsdelivr.net/gh/Beats0/beats0.github.io@master/js/zoom-vanilla.js",
   "//cdn.jsdelivr.net/gh/Beats0/beats0.github.io@master/js/hux-blog.min.js",
   "//cdn.jsdelivr.net/gh/Beats0/beats0.github.io@master/js/snackbar.js",
   "//cdn.jsdelivr.net/gh/Beats0/beats0.github.io@master/js/smoothScroll.min.js",
@@ -27,7 +27,7 @@ const PRECACHE_LIST = [
   "//cdn.jsdelivr.net/gh/Beats0/beats0.github.io@master/img/avatar-beats0.jpg",
   "//cdn.jsdelivr.net/gh/Beats0/beats0.github.io@master/img/404-bg.jpg",
   "//cdn.jsdelivr.net/gh/Beats0/beats0.github.io@master/css/live2d.css",
-  "//cdn.jsdelivr.net/gh/Beats0/beats0.github.io@master/css/hux-blog.min.css",
+  "//cdn.jsdelivr.net/gh/Beats0/beats0.github.io@master/css/hux-blog.css",
   "//cdn.jsdelivr.net/gh/Beats0/beats0.github.io@master/css/bootstrap.min.css",
   "//cdn.jsdelivr.net/npm/font-awesome@4.6.3/css/font-awesome.min.css"
   // "//cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"

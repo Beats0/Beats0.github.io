@@ -28,7 +28,7 @@
 <!-- Currently, only navbar scroll-down effect at desktop still depends on this -->
 <script src="{{ "/js/bootstrap.min.js " | prepend: site.cdnPrefix }}"></script>
 <!-- zoom-zoom-vanilla -->
-<script src="{{ "/js/zoom-vanilla.min.js " | prepend: site.cdnPrefix }}"></script>
+<script src="{{ "/js/zoom-vanilla.js " | prepend: site.cdnPrefix }}"></script>
 <!-- live2d -->
 <script src="{{ "/js/live2d.min.js" | prepend: site.cdnPrefix }}"></script>
 <script src="{{ "/js/message.js" | prepend: site.cdnPrefix }}"></script>
@@ -141,7 +141,7 @@
 <script type="text/javascript">
     function generateCatalog (selector) {
 
-        // interop with multilangual 
+        // interop with multilangual
         if ('{{ page.multilingual }}' == 'true') {
             _containerSelector = 'div.post-container.active'
         } else {
@@ -234,7 +234,7 @@
             $en.style.display = "none";
             $en.classList.remove("active");
         }
-        // interop with catalog 
+        // interop with catalog
         if ("{{ page.catalog }}") generateCatalog(".catalog-body");
     }
 

@@ -14,12 +14,11 @@ future: true
 
 # SNS settings
 RSS: false
-#weibo_username:     Beats0
-#zhihu_username:     Beats0
+#weibo_username:
+#zhihu_username:
 github_username:    Beats0
 twitter_username:   Beats0Ling
-#facebook_username:  Beats0
-
+#facebook_username:
 
 
 

@@ -6,17 +6,11 @@
 
 Node、Go 后端开发
 
-React-Native Android，IOS 跨平台应用开发
+React-Native 跨平台应用开发
 
 Python 菜鸡
 
-Flutter (兴趣使然)
-
-Linux一般玩家 (Docker菜鸡)
-
-画画萌新 (努力画画ing)
-
-宅 (补番ing)
+宅
 
 
 
@@ -41,5 +35,5 @@ Flutter | 40%
 * [GitHub](https://github.com/Beats0)
 * [Twitter](https://twitter.com/Beats0Ling)
 * [Bangumi](https://bangumi.tv/user/beats0)
-* [bilibili](https://space.bilibili.com/598848)
+* [bilibili](https://space.bilibili.com/10022183)
 * [Gmail](mailto:Beats01998@gmail.com)
