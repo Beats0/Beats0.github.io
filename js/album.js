@@ -1,5 +1,19 @@
 const data = [
   {
+    date: '2024-12-30',
+    img: 'https://steamuserimages-a.akamaihd.net/ugc/23181135224365781/93ACA4A8D5C99D157DDCFEF2E8E15B7D0D08867D/',
+    link: '',
+    title: '',
+    tags: ['动画']
+  },
+  {
+    date: '2024-05-20',
+    img: 'https://steamuserimages-a.akamaihd.net/ugc/23181135224366647/23AB13DBD9E130B3CF2B5F8203DA6E7AE54E363D/',
+    link: '',
+    title: '',
+    tags: ['恋爱']
+  },
+  {
     date: '2023-12-30',
     img: 'https://steamuserimages-a.akamaihd.net/ugc/2307596441975925728/F4A6BB8640753D54AF02E66F965CB4455A30B83F/',
     link: '',
